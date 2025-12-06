@@ -1,0 +1,46 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  variaves  */
+:root {
+    --bg: #0b0f14;
+    --panel: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.06);
+    --text: #e6eef8;
+    --muted: #9aa8bb;
+    --accent1: #8a5cff;
+    --accent2: #00d2ff;
+    --neon: 0 6px 28px rgba(138, 92, 255, 0.14), 0 1px 0 rgba(0, 0, 0, 0.6);
+    --glass-blur: 10px;
+    --header-height: 72px;
+    --transition-fast: 200ms;
+    --transition-med: 350ms;
+    --radius: 12px;
+    --font-mont: 'Montserrat', sans-serif;
+    --font-rale: 'Raleway', sans-serif;
+}
+
+[data-theme="light"] {
+    --bg: linear-gradient(180deg, #f7f8fb, #eef2fb);
+    --panel: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(10, 12, 20, 0.06);
+    --text: #09121a;
+    --muted: #4b5965;
+    --neon: 0 6px 28px rgba(138, 92, 255, 0.06);
+}
+
+/* Basic layout helpers */
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+    transition: background var(--transition-med), color var(--transition-med);
+}
