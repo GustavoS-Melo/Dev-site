@@ -1,261 +1,330 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desenvolvedor Web - Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer</title>
+  <!--STYLES-->
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <!--ICONS-->
+  <script src="https://kit.fontawesome.com/af0ad01426.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <img src="./assets/imgs/logo.png" alt="">
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#skills">Habilidades</a>
-      <a href="#projects">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img src="./assets/imgs/logo.png" alt="Logo Gustavo Dev">
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav" id="nav-menu">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#services" class="nav-link">Serviços</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Header Buttons -->
+      <div class="header-actions">
+
+        <!-- Troca de idioma -->
+        <button class="lang-switch" id="lang-btn">
+          <span class="lang-text">PT</span>
+        </button>
+
+        <!-- Dark / Light mode -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+          <span class="sun-icon"><i class="fa-regular fa-sun"></i></span>
+          <span class="moon-icon"><i class="fa-solid fa-moon"></i></span>
+        </button>
+
+        <!-- Mobile menu -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+
+      </div>
+
+    </div>
   </header>
 
-  <!--HERO-->
-  <section class="">
-    <div class="">
-      <h2>Olá, eu sou um Desenvolvedor Web</h2>
-      <p>Crio interfaces modernas, rápidas e responsivas. Transformo seu negócio em experiências digitais completas.</p>
-      <button>Ver Portfólio</button>
-    </div>
-    <img src="" alt="developer image" />
-  </section>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-container">
 
-  <!--sobre-->
-  <section id="sobre" class="">
-    <div class="">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Olá, eu sou um <span>Desenvolvedor Web</span>
+        </h1>
 
-      <h2 class="">Sobre Mim</h2>
+        <p class="hero-subtitle">
+          Crio interfaces modernas, rápidas e responsivas. Transformo seu negócio em experiências digitais completas.
+        </p>
 
-      <p id="sobre" class="">
-        Olá! Meu nome é <strong>Gustavo</strong>, sou desenvolvedor especializado na criação de soluções digitais que
-        unem
-        <strong>performance, design moderno e foco total na experiência do usuário</strong>. <br>
-        Iniciei minha trajetória profissional aos 18 anos, logo após a conclusão do ensino médio,
-        atuando como auxiliar administrativo. Esse período foi fundamental para meu amadurecimento
-        pessoal e para o desenvolvimento de competências organizacionais e de comunicação.
-        Posteriormente, direcionei minha carreira para a área da saúde, onde adquiri experiências
-        significativas e aprimorei habilidades relacionadas à empatia, responsabilidade e trabalho
-        em equipe. Paralelamente, atuei de forma autônoma e com gestão de redes sociais, o que me
-        proporcionou uma visão ampla sobre diferentes segmentos e modelos de atuação profissional.
-        Com o passar do tempo, identifiquei na tecnologia uma área que alia meus interesses à
-        possibilidade de constante aprendizado e inovação. Assim, decidi realizar uma transição
-        de carreira e me especializei em Desenvolvimento Front-End pela Escola DNC, consolidando
-        minha base técnica e criativa para atuar no setor.
-      </p>
-
-      <p class="">
-        Desde então, venho ajudando empresas, empreendedores e profissionais a transformarem ideias em projetos reais.
-        Ao longo dos anos, aprimorei minhas habilidades em diferentes áreas do desenvolvimento, buscando sempre novas
-        tecnologias e boas práticas para entregar produtos mais rápidos, seguros e eficientes.
-      </p>
-
-      <p class="">
-        Meu compromisso vai além da programação. Antes de iniciar qualquer projeto, busco entender profundamente o
-        objetivo, o público-alvo e o posicionamento da marca. Isso me permite criar soluções sob medida, combinando
-        <strong>tecnologia, estratégia e inovação</strong>. Acredito que um bom sistema deve ser funcional, intuitivo,
-        visualmente atraente e focado em gerar resultados reais.
-      </p>
-
-      <p class="">
-        Se você busca alguém comprometido, acessível e apaixonado pelo que faz, será um prazer colaborar no seu próximo
-        projeto.
-        Vamos transformar sua ideia em uma experiência digital incrível!
-      </p>
-
-    </div>
-  </section>
-
-  <!--skills-->
-  <section id="skills" class="skills">
-    <h3 class="section-title">Habilidades</h3>
-    <div class="skills-grid">
-      <div class="skill-box">
-        <h4>HTML</h4>
-        <p>Estruturação semântica e otimizada para SEO, garantindo acessibilidade e boa indexação.</p>
-      </div>
-      <div class="skill-box">
-        <h4>CSS</h4>
-        <p>Criação de layouts modernos, responsivos e animados utilizando Flexbox, Grid e boas práticas.</p>
-      </div>
-      <div class="skill-box">
-        <h4>JavaScript</h4>
-        <p>Desenvolvimento de interatividade, lógica de aplicações e manipulação dinâmica de elementos.</p>
-      </div>
-      <div class="skill-box">
-        <h4>React</h4>
-        <p>Construção de interfaces avançadas, componentizadas e performáticas para aplicações web.</p>
-      </div>
-      <div class="skill-box">
-        <h4>Node.js</h4>
-        <p>Criação de APIs rápidas e seguras, integrações e back-end escalável.</p>
-      </div>
-      <div class="skill-box">
-        <h4>UI/UX</h4>
-        <p>Design intuitivo focado em experiência do usuário, usabilidade e estética moderna.</p>
-      </div>
-  </section>
-
-  <!--projects-->
-  <section id="projects" class="projects">
-    <h3 class="section-title">Projetos</h3>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="" />
-        <h4>Projeto 1</h4>
-        <p>Descrição breve do projeto desenvolvido.</p>
-      </div>
-      <div class="project-card">
-        <img src="" />
-        <h4>Projeto 2</h4>
-        <p>Descrição breve do projeto desenvolvido.</p>
-      </div>
-      <div class="project-card">
-        <img src="" />
-        <h4>Projeto 3</h4>
-        <p>Descrição breve do projeto desenvolvido.</p>
-      </div>
-    </div>
-  </section>
-
-  <!--services-->
-  <section id="services">
-    <h3 class="section-title">Serviços que posso te oferecer</h3>
-    <div>
-
-      <div>
-        <h3>Sites Institucionais</h3>
-        <p>Sites corporativos profissionais com design moderno e responsivo.</p>
-        <ul>
-          <li>Design Responsivo</li>
-          <li>SEO Otimizado</li>
-          <li>Painel Admin</li>
-          <li>Integração com Redes Sociais</li>
-        </ul>
+        <button class="btn primary-btn">Ver Portfólio</button>
       </div>
 
-      <div>
-        <h3>Landing Pages</h3>
-        <p>Páginas de alta conversão focadas em vendas e captação de leads.</p>
-        <ul>
-          <li>Alta Conversão</li>
-          <li>Carregamento Rápido</li>
-          <li>Formulários Avançados</li>
-          <li>Analytics Integrado</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>E-commerce</h3>
-        <p>Lojas virtuais completas com sistema de pagamento integrado.</p>
-        <ul>
-          <li>Gateway de Pagamento</li>
-          <li>Gestão de Estoque</li>
-          <li>Painel Vendedor</li>
-          <li>Sistema de Cupons</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Aplicativos Mobile</h3>
-        <p>Apps nativos e híbridos para iOS e Android.</p>
-        <ul>
-          <li>React Native</li>
-          <li>Design Nativo</li>
-          <li>Push Notifications</li>
-          <li>Offline First</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Sistemas Web</h3>
-        <p>Sistemas personalizados para gestão e automação de processos.</p>
-        <ul>
-          <li>Sistema Sob Medida</li>
-          <li>Relatórios Avançados</li>
-          <li>Multi-usuário</li>
-          <li>API Rest</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Manutenção</h3>
-        <p>Suporte técnico e manutenção contínua dos sistemas.</p>
-        <ul>
-          <li>Suporte 24/7</li>
-          <li>Atualizações</li>
-          <li>Backup Automático</li>
-          <li>Monitoramento</li>
-        </ul>
+      <div class="hero-image">
+        <img src="" alt="Developer workspace">
       </div>
 
     </div>
   </section>
 
-  <!--benefits-->
-  <section class="benefits">
-    <h3 class="section-title">Por que ter um site?</h3>
-    <div>
-      <div>
-        <h4>Profissionalismo</h4>
-        <p>Um site aumenta a credibilidade da sua marca e mostra ao cliente que você leva seu negócio a sério.</p>
+  <!-- ABOUT -->
+  <section id="sobre" class="section about">
+    <div class="container">
+
+      <h2 class="section-title">Sobre Mim</h2>
+
+      <div class="about-content">
+        <p>
+          Olá! Meu nome é <strong>Gustavo</strong>, sou desenvolvedor especializado na criação de soluções digitais que unem
+          <strong>performance, design moderno e foco total na experiência do usuário</strong>.
+        </p>
+
+        <p>
+          Iniciei minha trajetória profissional aos 18 anos, logo após a conclusão do ensino médio...
+        </p>
+
+        <p>
+          Desde então, venho ajudando empresas, empreendedores e profissionais a transformarem ideias em projetos reais.
+        </p>
+
+        <p>
+          Meu compromisso vai além da programação...
+        </p>
+
+        <p>
+          Se você busca alguém comprometido, acessível e apaixonado pelo que faz, será um prazer colaborar no seu próximo projeto.
+        </p>
       </div>
-      <div>
-        <h4>Disponibilidade 24/7</h4>
-        <p>Seu negócio continua visível e acessível mesmo quando você não está online, atraindo clientes a qualquer
-          momento.</p>
-      </div>
-      <div>
-        <h4>Maior Alcance</h4>
-        <p>Com um site otimizado, você pode alcançar clientes de qualquer lugar do mundo e se expandir sem limites.</p>
-      </div>
-      <div>
-        <h4>Vantagem Competitiva</h4>
-        <p>Empresas com presença online bem estruturada se destacam da concorrência e conquistam mais oportunidades.</p>
-      </div>
-      <div>
-        <h4>Automação e Facilidade</h4>
-        <p>Formulários, chat, catálogo e integrações facilitam o atendimento e agilizam processos do seu negócio.</p>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h3 class="section-title">Habilidades</h3>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h4>HTML</h4>
+          <p>Estruturação semântica e otimizada para SEO.</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>CSS</h4>
+          <p>Layouts modernos, responsivos e animados.</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>JavaScript</h4>
+          <p>Interatividade, lógica e manipulação dinâmica.</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>React</h4>
+          <p>Interfaces componentizadas e performáticas.</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>Node.js</h4>
+          <p>APIs rápidas e seguras.</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>UI/UX</h4>
+          <p>Design intuitivo e focado em experiência.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="">
-    <div class="">
-      <h2 class="">Entre em Contato</h2>
-      <p class="">
-        Tem um projeto em mente, deseja solicitar um orçamento ou tirar alguma dúvida? Preencha o formulário abaixo e
-        retornarei o mais rápido possível.
+  <!-- PROJECTS  -->
+  <section id="projects" class="section projects">
+    <div class="container">
+
+      <h3 class="section-title">Projetos</h3>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="" alt="Projeto 1">
+          <h4>Projeto 1</h4>
+          <p>Descrição breve do projeto desenvolvido.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="" alt="Projeto 2">
+          <h4>Projeto 2</h4>
+          <p>Descrição breve do projeto desenvolvido.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="" alt="Projeto 3">
+          <h4>Projeto 3</h4>
+          <p>Descrição breve do projeto desenvolvido.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="container">
+
+      <h3 class="section-title">Serviços que posso te oferecer</h3>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <h3>Sites Institucionais</h3>
+          <p>Sites corporativos profissionais com design moderno e responsivo.</p>
+          <ul>
+            <li>Design Responsivo</li>
+            <li>SEO Otimizado</li>
+            <li>Painel Admin</li>
+            <li>Integração com Redes Sociais</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Landing Pages</h3>
+          <p>Páginas focadas em conversão.</p>
+          <ul>
+            <li>Alta Conversão</li>
+            <li>Carregamento Rápido</li>
+            <li>Formulários Avançados</li>
+            <li>Analytics Integrado</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>E-commerce</h3>
+          <p>Lojas virtuais completas.</p>
+          <ul>
+            <li>Gateway de Pagamento</li>
+            <li>Gestão de Estoque</li>
+            <li>Painel Vendedor</li>
+            <li>Sistema de Cupons</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Aplicativos Mobile</h3>
+          <p>Apps nativos e híbridos.</p>
+          <ul>
+            <li>React Native</li>
+            <li>Push Notifications</li>
+            <li>Offline First</li>
+            <li>Design Nativo</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Sistemas Web</h3>
+          <p>Sistemas personalizados.</p>
+          <ul>
+            <li>Sistema Sob Medida</li>
+            <li>Relatórios Avançados</li>
+            <li>Multi-usuário</li>
+            <li>API Rest</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Manutenção</h3>
+          <p>Manutenção contínua e suporte.</p>
+          <ul>
+            <li>Suporte 24/7</li>
+            <li>Atualizações</li>
+            <li>Backup Automático</li>
+            <li>Monitoramento</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits section">
+    <div class="container">
+      <h3 class="section-title">Por que ter um site?</h3>
+
+      <div class="benefits-grid">
+
+        <div class="benefit-card">
+          <h4>Profissionalismo</h4>
+          <p>Um site aumenta a credibilidade da sua marca.</p>
+        </div>
+
+        <div class="benefit-card">
+          <h4>Disponibilidade 24/7</h4>
+          <p>Seu negócio continua visível mesmo quando você não está online.</p>
+        </div>
+
+        <div class="benefit-card">
+          <h4>Maior Alcance</h4>
+          <p>Você pode alcançar clientes de qualquer lugar do mundo.</p>
+        </div>
+
+        <div class="benefit-card">
+          <h4>Vantagem Competitiva</h4>
+          <p>Presença online bem estruturada aumenta oportunidades.</p>
+        </div>
+
+        <div class="benefit-card">
+          <h4>Automação e Facilidade</h4>
+          <p>Formulários, catálogos e integrações agilizam processos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section contact">
+    <div class="container contact-container">
+
+      <h2 class="section-title">Entre em Contato</h2>
+
+      <p class="contact-text">
+        Tem um projeto em mente? Preencha o formulário e retornarei o mais rápido possível.
       </p>
 
-      <form id="form-contato" class="">
-        <input type="text" placeholder="Seu nome" class="" />
-        <input type="email" placeholder="Seu e-mail" class="" />
-        <input type="number" placeholder="Telefone" class="" />
-        <textarea placeholder="Sua mensagem" rows="6" class=""></textarea>
-
-        <button class="">
-          Enviar Mensagem
-        </button>
+      <form id="form-contato" class="contact-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <input type="tel" placeholder="Telefone">
+        <textarea placeholder="Sua mensagem" rows="6" required></textarea>
+        <button class="btn primary-btn">Enviar Mensagem</button>
       </form>
+
     </div>
   </section>
 
-  <!--footer-->
-  <footer>
-    <p>© 2025 Gustavo Web Developer • Todos os direitos reservados</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Gustavo Web Developer • Todos os direitos reservados</p>
+    </div>
   </footer>
 
-  <!--script-->
   <script src="./assets/scripts/index.js"></script>
 </body>
 
