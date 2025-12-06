@@ -235,3 +235,128 @@ body {
     transition: transform var(--transition-fast), opacity var(--transition-fast);
     display: none;
 }
+
+/* Hero */
+.hero {
+    font-family: var(--font-mont);
+    background: radial-gradient(circle at 20% 30%, #8F57FF 0%, transparent 60%), radial-gradient(circle at 80% 70%, #00D8FF 0%, transparent 60%), linear-gradient(135deg, #121826, #0D1117);
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    font-size: 57px;
+    width: 100%;
+    font-family: var(--font-rale);
+    font-weight: 400;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 26px;
+    font-family: var(--font-rale);
+}
+
+.hero button {
+    padding: 14px 34px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #8F57FF, #00D8FF);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(143, 87, 255, 0.5), 0 0 30px rgba(0, 216, 255, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.hero button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(143, 87, 255, 0.7), 0 0 40px rgba(0, 216, 255, 0.45);
+    filter: brightness(1.1);
+}
+
+.hero button {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.25),
+            transparent);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+.hero button:hover::after {
+    left: 100%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.section-title {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+    color: var(--text);
+}
+
+/* Tiny neon accent on hero title */
+.hero-title span {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 4px 20px rgba(138, 92, 255, 0.06);
+}
+
+/* Footer spacing to ensure sticky header doesn't overlap content */
+body> :not(.header):first-child {
+    margin-top: 6px;
+}
+
+/* Focus & reduced motion improvements */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 6px 20px rgba(138, 92, 255, 0.07);
+    border-radius: 8px;
+}
+
+/* Utility classes */
+.hidden {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
