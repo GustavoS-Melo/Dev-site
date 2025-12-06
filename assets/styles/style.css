@@ -241,7 +241,7 @@ body {
     font-family: var(--font-mont);
     background: radial-gradient(circle at 20% 30%, #8F57FF 0%, transparent 60%), radial-gradient(circle at 80% 70%, #00D8FF 0%, transparent 60%), linear-gradient(135deg, #121826, #0D1117);
     width: 100%;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-size: cover;
@@ -363,54 +363,98 @@ textarea:focus {
 
 /* ABOUT */
 #sobre {
-  width: 100%;
-  padding: 100px 10%;
-  background: #ffffff;
-  color: #1e1e1e;
-  line-height: 1.7;
-  font-family: var(--font-mont);
+    width: 100%;
+    padding: 100px 10%;
+    background: #ffffff;
+    color: #1e1e1e;
+    line-height: 1.7;
+    font-family: var(--font-mont);
 }
 
-/* Centralized and limited content */
 #sobre .sobre-container {
-  max-width: 950px;
-  margin: auto;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: justify;
 }
-#sobre .sobre-container h2{
-    font-size: 30px;
+
+#sobre h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
 }
-/* Title */
-#sobre .sobre-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 25px;
-  position: relative;
-  color: #121826;
+
+#sobre .sobre-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.75;
+    max-width: 650px;
+    margin: 0 auto 50px;
 }
 
 /* Neon decorative line */
+
 #sobre .sobre-title::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 4px;
-  margin-top: 8px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #8F57FF, #00D8FF);
-  box-shadow: 0 0 10px rgba(143, 87, 255, 0.5);
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #8F57FF, #00D8FF);
+    box-shadow: 0 0 10px rgba(143, 87, 255, 0.5);
 }
 
 #sobre p {
-  margin-bottom: 20px;
-  font-size: 1.05rem;
-  opacity: 0.9;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    opacity: 0.9;
 }
 
-/* strong */
 #sobre strong {
-  color: #8F57FF;
-  font-weight: 700;
+    color: #8F57FF;
+    font-weight: 700;
 }
+
+/* GRID DE CARDS */
+.sobre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+.sobre-card {
+    position: relative;
+    z-index: 1;
+    background: #ffffffcc;
+    padding: 30px;
+    border-radius: 20px;
+    border: var(--accent1) solid 1px;
+    box-shadow: 0 4px 12px #0000000f;
+}
+
+.sobre-card:hover {
+    transition-duration: 1s !important;
+    transform: translateY(-6px) scale(1.01) !important;
+    box-shadow: 0 14px 40px rgba(11, 13, 20, 0.25), 0 6px 22px rgba(143, 87, 255, 0.12);
+}
+
+.sobre-card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.sobre-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.neon-svg {
+    color: var(--primary);
+    filter: drop-shadow(0 0 6px #8F57FF);
+}
+
 
 /*Fade-in*/
 @keyframes fadeIn {
@@ -418,6 +462,7 @@ textarea:focus {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -434,6 +479,7 @@ textarea:focus {
         opacity: 0;
         transform: translateX(-30px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -442,4 +488,20 @@ textarea:focus {
 
 .fade-in-left {
     animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+/*Fade-on right*/
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.8s ease-out forwards;
 }
