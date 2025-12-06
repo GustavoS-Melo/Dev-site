@@ -364,7 +364,7 @@ textarea:focus {
 /* ABOUT */
 #sobre {
     width: 100%;
-    padding: 100px 10%;
+    padding: 1%;
     background: #ffffff;
     color: #1e1e1e;
     line-height: 1.7;
@@ -455,6 +455,159 @@ textarea:focus {
     filter: drop-shadow(0 0 6px #8F57FF);
 }
 
+/* SECTION SKILLS */
+.skills {
+    padding: 1%;
+    font-family: var(--font-mont);
+}
+
+.skills .section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+/* Main grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Cards */
+.skill-box {
+    position: relative;
+  border-radius: 18px;
+  padding: 32px;
+  /* internal color */
+  background-color: var(--card-bg, #ffffff);
+
+  /* --- GRADIENT BORDER --- */
+  background-image:
+    linear-gradient(var(--card-bg, #ffffff), var(--card-bg, #ffffff)),
+    linear-gradient(135deg, #9b4dff, #00d4ff);
+
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+
+  border: 2px solid transparent;
+
+  /* efects */
+  transition: transform .25s ease, box-shadow .3s ease;
+}
+
+/* Automatic delays for "stagger" effect */
+.skill-box:nth-child(1) {
+    animation-delay: .1s;
+}
+
+.skill-box:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.skill-box:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.skill-box:nth-child(4) {
+    animation-delay: .4s;
+}
+
+.skill-box:nth-child(5) {
+    animation-delay: .5s;
+}
+
+.skill-box:nth-child(6) {
+    animation-delay: .6s;
+}
+
+/* Hover */
+.skill-box:hover {
+    transform: translateY(-6px);
+  box-shadow:
+    0 18px 35px rgba(0,0,0,0.25),
+    0 0 16px rgba(155,77,255,0.18),
+    0 0 28px rgba(0,212,255,0.12);
+}
+
+/* HOVER: brighter edge */
+.skill-box:hover::before {
+  opacity: 1;
+  filter: drop-shadow(0 0 12px rgba(155,77,255,0.3))
+          drop-shadow(0 0 18px rgba(0,212,255,0.25));
+}
+
+/* Title */
+.skill-box h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* paragraph */
+.skill-box p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #555;
+}
+
+.skill-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+}
+
+.skill-svg {
+    width: 40px;
+    height: 40px;
+    color: var(--accent1);
+    transition: transform .25s ease, filter .25s ease;
+}
+
+/* soft neon effect */
+.neon-svg {
+    filter: drop-shadow(0 6px 16px rgba(143, 87, 255, 0.18)) drop-shadow(0 2px 8px rgba(0, 216, 255, 0.08));
+}
+
+.skill-box:hover .skill-svg {
+    transform: translateY(-3px) scale(1.04);
+    filter: drop-shadow(0 10px 28px rgba(143, 87, 255, 0.28)) drop-shadow(0 4px 14px rgba(0, 216, 255, 0.12));
+}
+
+/*  individual colors per skill */
+.skill-html .skill-svg {
+    color: #e34f26;
+}
+
+.skill-css .skill-svg {
+    color: #2965f1;
+}
+
+.skill-js .skill-svg {
+    color: #f7df1e;
+}
+
+.skill-react .skill-svg {
+    color: #61dafb;
+}
+
+.skill-node .skill-svg {
+    color: #78a831;
+}
+
+.skill-uiux .skill-svg {
+    color: var(--accent2);
+}
+
 
 /*Fade-in*/
 @keyframes fadeIn {
@@ -496,6 +649,7 @@ textarea:focus {
         opacity: 0;
         transform: translateX(30px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -504,4 +658,17 @@ textarea:focus {
 
 .fade-in-right {
     animation: fadeInRight 0.8s ease-out forwards;
+}
+
+/* Fade-in-up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
