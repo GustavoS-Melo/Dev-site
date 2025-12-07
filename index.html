@@ -127,7 +127,7 @@
 
 
   <!-- SKILLS -->
-  <section class="skills-section">
+  <section id="skills" class="skills-section">
     <h2>Habilidades</h2>
 
     <div class="skills-grid">
@@ -279,10 +279,10 @@
           <div class="card-back">
             <p>
               UX é sobre como o usuário se sente ao usar um produto.
-              Trabalha com pesquisas, testes, fluxos, arquitetura de informação e usabilidade para garantir 
+              Trabalha com pesquisas, testes, fluxos, arquitetura de informação e usabilidade para garantir
               que tudo seja simples, intuitivo e agradável.
               UI é sobre a aparência e a interação visual.
-              Define cores, tipografias, botões, espaçamentos, ícones e todos os elementos gráficos que o 
+              Define cores, tipografias, botões, espaçamentos, ícones e todos os elementos gráficos que o
               usuário vê e toca.
             </p>
           </div>
@@ -294,31 +294,58 @@
 
 
   <!-- PROJECTS  -->
-  <section id="projects" class="section projects">
-    <div class="container">
+  <section class="projects-carousel-section">
+    <h2>Conheça alguns dos meus Projetos</h2>
 
-      <h3 class="section-title">Projetos</h3>
+    <div class="carousel-container">
 
-      <div class="projects-grid">
+      <!-- left button -->
+      <button class="carousel-btn prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
 
-        <div class="project-card">
-          <img src="" alt="Projeto 1">
-          <h4>Projeto 1</h4>
-          <p>Descrição breve do projeto desenvolvido.</p>
+      <!-- carousel -->
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track">
+
+          <!-- Project 1 -->
+          <a href="" class="carousel-item" target="_blank">
+            <img src="./assets/imgs/carousel/project-1.jpg" alt="Projeto 1">
+            <span class="carousel-caption">Projeto 1</span>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="./assets/imgs/carousel/project-2.jpg" class="carousel-item" target="_blank">
+            <img src="" alt="Projeto 2">
+            <span class="carousel-caption">Projeto 2</span>
+          </a>
+
+          <!-- Project 3 -->
+          <a href="./assets/imgs/carousel/project-3.jpg" class="carousel-item" target="_blank">
+            <img src="" alt="Projeto 3">
+            <span class="carousel-caption">Projeto 3</span>
+          </a>
+
+          <!-- Project 4 -->
+          <a href="./assets/imgs/carousel/project-4.jpg" class="carousel-item" target="_blank">
+            <img src="" alt="Projeto 4">
+            <span class="carousel-caption">Projeto 4</span>
+          </a>
+
         </div>
+      </div>
 
-        <div class="project-card">
-          <img src="" alt="Projeto 2">
-          <h4>Projeto 2</h4>
-          <p>Descrição breve do projeto desenvolvido.</p>
-        </div>
+      <!-- right button -->
+      <button class="carousel-btn next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
 
-        <div class="project-card">
-          <img src="" alt="Projeto 3">
-          <h4>Projeto 3</h4>
-          <p>Descrição breve do projeto desenvolvido.</p>
-        </div>
-
+      <!-- indicators -->
+      <div class="carousel-indicators">
+        <span class="indicator active"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
       </div>
 
     </div>
@@ -384,17 +411,6 @@
             <li>Relatórios Avançados</li>
             <li>Multi-usuário</li>
             <li>API Rest</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <h3>Manutenção</h3>
-          <p>Manutenção contínua e suporte.</p>
-          <ul>
-            <li>Suporte 24/7</li>
-            <li>Atualizações</li>
-            <li>Backup Automático</li>
-            <li>Monitoramento</li>
           </ul>
         </div>
 
