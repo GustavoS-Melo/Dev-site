@@ -967,9 +967,6 @@ textarea:focus {
 }
 
 /*Contact section*/
-/* ============================
-   CONTACT SECTION
-============================ */
 
 .contact {
     padding: 20px;
@@ -1099,7 +1096,7 @@ textarea:focus {
     }
 }
 
-/* Seleciona os elementos do formulário */
+/* Inputs */
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
@@ -1107,7 +1104,7 @@ textarea:focus {
     animation: fade-slide-up 0.7s ease forwards;
 }
 
-/* Delay escalonado — um efeito premium */
+/* Stepped delay */
 .contact-form input:nth-child(1) {
     animation-delay: 0.1s;
 }
@@ -1126,6 +1123,50 @@ textarea:focus {
 
 .contact-form button {
     animation-delay: 0.75s;
+}
+
+/*Whatsapp link*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    animation: blink 2.3s infinite ease-in-out;
+}
+
+/* Keyframe for whats link */
+@keyframes blink {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* hover effect */
+.whatsapp-float:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 /*Keyframes*/
