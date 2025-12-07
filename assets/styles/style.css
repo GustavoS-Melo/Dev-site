@@ -808,9 +808,11 @@ textarea:focus {
     font-family: var(--font-mont);
     text-align: center;
 }
-.section-title{
+
+.section-title {
     font-weight: 400;
 }
+
 .services .section-title {
     font-size: 2.6rem;
     font-weight: 400;
@@ -891,6 +893,77 @@ textarea:focus {
 /* GRADIENT BORDER ON HOVER */
 .service-card.expandable:hover {
     border-image: linear-gradient(135deg, #9b4dff, #00d4ff) 1;
+}
+
+/*Benefits section*/
+
+.benefits {
+    font-family: var(--font-mont);
+}
+
+.benefits .section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+/* Transforming cards into feature lines */
+.benefits-grid {
+    max-width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+/* Each card becomes an elegant line. */
+.benefit-card {
+    gap: 18px;
+    padding: 20px 25px;
+    border-left: 3px solid #bba3fc;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+    transition: 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+/* hover efect */
+.benefit-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-left-color: var(--accent1);
+    transform: translateX(6px);
+}
+
+/* Creating the icon via CSS (without altering the HTML) */
+.benefit-card::before {
+    content: "✔";
+    font-size: 1rem;
+    background: linear-gradient(135deg, #6b46ff, #9d7bff);
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 12px rgba(111, 72, 255, 0.5);
+    margin-top: 3px;
+}
+
+/* text and title */
+.benefit-card h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.benefit-card p {
+    color: #000000;
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
 
