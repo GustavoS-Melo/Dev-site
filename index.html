@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Developer</title>
+  <title>Gustavo - Web Developer</title>
   <!--STYLES-->
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <!--Favicon-->
   <link rel="shortcut icon" href="./assets/imgs/favicon/favicon.svg" type="image/x-icon">
-  <!--ICONS-->
+  <!--ICONS fontawsome-->
   <script src="https://kit.fontawesome.com/af0ad01426.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,7 +20,7 @@
     <div class="container header-container">
 
       <!-- Logo -->
-      <a href="#hero">
+      <a href="#hero" aria-label="Logo">
         <svg width="170" height="60" viewBox="0 0 170 60" role="img"
           aria-label="G W D logo">
           <defs>
@@ -37,19 +38,19 @@
 
       <!-- Navigation -->
       <nav class="nav" id="nav-menu">
-        <a href="#sobre" class="nav-link">Sobre</a>
-        <a href="#skills" class="nav-link">Habilidades</a>
-        <a href="#projects" class="nav-link">Projetos</a>
-        <a href="#services" class="nav-link">Serviços</a>
-        <a href="#contact" class="nav-link">Contato</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a>
+        <a href="#services" class="nav-link" data-i18n="nav.services">Serviços</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contato</a>
       </nav>
 
       <!-- Header Buttons -->
       <div class="header-actions">
 
-        <!-- Troca de idioma -->
-        <button class="lang-switch" id="lang-btn">
-          <span class="lang-text">PT</span>
+        <!-- Language switch -->
+        <button class="lang-switch" id="lang-btn" aria-label="Mudar idioma">
+          <span class="lang-text" data-i18n="lang.current">PT</span>
         </button>
 
         <!-- Dark / Light mode -->
@@ -74,22 +75,22 @@
   <section class="hero fade-in" id="hero">
     <div class="container hero-container">
       <div class="hero-content">
-        <h1 class="hero-title">
+        <h1 class="hero-title" data-i18n="hero.title">
           Olá, eu sou um <span>Desenvolvedor Web</span>
         </h1>
-        <p class="hero-subtitle">
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
           Crio interfaces modernas, rápidas e responsivas. Transformo seu negócio em experiências digitais completas.
         </p>
-        <button class="btn primary-btn"><a href="#projects">Ver Portfólio</a></button>
+        <button class="btn primary-btn" data-i18n="hero.cta"><a href="#projects">Ver Portfólio</a></button>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="sobre" class="sobre fade-in">
+  <section id="about" class="sobre fade-in">
     <div class="sobre-container">
-      <h2>Sobre Mim</h2>
-      <p class="sobre-subtitle">
+      <h2 data-i18n="about.title">Sobre Mim</h2>
+      <p class="sobre-subtitle" data-i18n="about.p1">
         Olá! Meu nome é <strong>Gustavo</strong>, sou desenvolvedor especializado na criação de soluções digitais que
         unem
         <strong>performance, design moderno e foco total na experiência do usuário</strong>.
@@ -109,8 +110,8 @@
             <path d="M7 13h4M7 16h6" stroke-width="2" stroke="currentColor" opacity="0.9" />
           </svg>
 
-          <h3>Experiência</h3>
-          <p>Atuo no desenvolvimento front-end com foco em performance e boas práticas.</p>
+          <h3 data-i18n="about.card1.title">Experiência</h3>
+          <p data-i18n="about.card1.text">Atuo no desenvolvimento front-end com foco em performance e boas práticas.</p>
         </div>
 
         <div class="sobre-card fade-in">
@@ -120,8 +121,8 @@
             <path d="M5 15h14l-7 4z" stroke="currentColor" stroke-width="2" fill="none" />
           </svg>
 
-          <h3>Design Moderno</h3>
-          <p>Minha identidade visual é pensada para transmitir confiança, clareza e estilo.</p>
+          <h3 data-i18n="about.card2.title">Design Moderno</h3>
+          <p data-i18n="about.card2.text">Minha identidade visual é pensada para transmitir confiança, clareza e estilo.</p>
         </div>
 
         <div class="sobre-card fade-in-right">
@@ -131,8 +132,8 @@
             <line x1="20" y1="8" x2="20" y2="20" stroke="currentColor" stroke-width="2" />
           </svg>
 
-          <h3>Resultados</h3>
-          <p>Transformo ideias em interfaces funcionais, responsivas e de alto impacto.</p>
+          <h3 data-i18n="about.card3.title">Resultados</h3>
+          <p data-i18n="about.card3.text">Transformo ideias em interfaces funcionais, responsivas e de alto impacto.</p>
         </div>
       </div>
     </div>
@@ -140,7 +141,7 @@
 
   <!-- SKILLS -->
   <section id="skills" class="skills-section">
-    <h2>Habilidades</h2>
+    <h2 data-i18n="skills.title">Habilidades</h2>
 
     <div class="skills-grid">
 
@@ -148,7 +149,7 @@
       <div class="skill-card fade-in-left">
         <div class="card-inner">
           <div class="card-front">
-            <h3>HTML</h3>
+            <h3 data-i18n="skill.html.title">HTML</h3>
             <div class="skill-icon skill-html">
               <svg class="skill-svg neon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -157,10 +158,10 @@
                 <path d="M9 12.5h6" />
               </svg>
             </div>
-            <p>Estruturação semântica e otimizada para SEO.</p>
+            <p data-i18n="skill.html.desc">Estruturação semântica e otimizada para SEO.</p>
           </div>
           <div class="card-back">
-            <p>
+            <p data-i18n="skill.html.back">
               HTML <i>(HyperText Markup Language)</i> é o esqueleto da página, responsável por organizar e definir os
               elementos que aparecem na tela,
               servindo como base para o CSS (estilo) e o JavaScript (funcionalidade).
@@ -173,7 +174,7 @@
       <div class="skill-card fade-in">
         <div class="card-inner">
           <div class="card-front">
-            <h3>CSS</h3>
+            <h3 data-i18n="skill.css.title">CSS</h3>
             <div class="skill-icon skill-css">
               <svg class="skill-svg neon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -183,10 +184,10 @@
                 <path d="M9 16l3 .9 3-.9" />
               </svg>
             </div>
-            <p>Layouts modernos, responsivos e animados.</p>
+            <p data-i18n="skill.css.desc">Layouts modernos, responsivos e animados.</p>
           </div>
           <div class="card-back">
-            <p>
+            <p data-i18n="skill.css.back">
               CSS (Cascading Style Sheets) é usado para definir o visual e o estilo de uma página web.
               Enquanto o HTML estrutura o conteúdo, o CSS controla cores, tamanhos, fontes, espaçamentos,
               layouts, animações e efeitos visuais.
@@ -199,7 +200,7 @@
       <div class="skill-card fade-in-right">
         <div class="card-inner">
           <div class="card-front">
-            <h3>JavaScript</h3>
+            <h3 data-i18n="skill.js.title">JavaScript</h3>
             <div class="skill-icon skill-js">
               <svg class="skill-svg neon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -208,10 +209,10 @@
                 <circle cx="12" cy="17" r="0.9" fill="currentColor" stroke="none" />
               </svg>
             </div>
-            <p>Interatividade, lógica e manipulação dinâmica.</p>
+            <p data-i18n="skill.js.desc">Interatividade, lógica e manipulação dinâmica.</p>
           </div>
           <div class="card-back">
-            <p>
+            <p data-i18n="skill.js.back">
               JavaScript é a linguagem de programação responsável por trazer interatividade e dinamismo às páginas web.
               Com ele, elementos da página podem responder a ações do usuário, como cliques, digitação e movimentos do
               mouse, além de permitir animações, validação de formulários, requisições a APIs, atualização de conteúdo
@@ -225,7 +226,7 @@
       <div class="skill-card fade-in-left">
         <div class="card-inner">
           <div class="card-front">
-            <h3>React</h3>
+            <h3 data-i18n="skill.react.title">React</h3>
             <div class="skill-icon skill-react">
               <svg class="skill-svg neon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -234,10 +235,10 @@
                 <circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none" />
               </svg>
             </div>
-            <p>Interfaces componentizadas e performáticas.</p>
+            <p data-i18n="skill.react.desc">Interfaces componentizadas e performáticas.</p>
           </div>
           <div class="card-back">
-            <p>
+            <p data-i18n="skill.react.back">
               React é uma biblioteca JavaScript usada para criar interfaces de usuário de forma rápida, organizada
               e eficiente.
               Ele funciona com componentes, que são blocos reutilizáveis de código que representam partes da interface
@@ -251,7 +252,7 @@
       <div class="skill-card fade-in">
         <div class="card-inner">
           <div class="card-front">
-            <h3>Node.js</h3>
+            <h3 data-i18n="skill.node.title">Node.js</h3>
             <div class="skill-icon skill-node">
               <svg class="skill-svg neon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -259,10 +260,10 @@
                 <path d="M9.5 9.5c.6-1 2.6-1.4 3.8-.6 1.4.9 1.3 2.6-.2 3.6-1.7 1.2-3.8.6-4.6-1" />
               </svg>
             </div>
-            <p>APIs rápidas e seguras.</p>
+            <p data-i18n="skill.node.desc">APIs rápidas e seguras.</p>
           </div>
           <div class="card-back">
-            <p>
+            <p data-i18n="skill.node.back">
               Node.js é um ambiente de execução JavaScript no lado do servidor.
               Enquanto o JavaScript tradicional roda apenas no navegador, o Node.js
               permite usar JavaScript para criar back-ends, APIs, servidores e aplicações
@@ -276,7 +277,7 @@
       <div class="skill-card fade-in-right">
         <div class="card-inner">
           <div class="card-front">
-            <h3>UI / UX</h3>
+            <h3 data-i18n="skill.uiux.title">UI / UX</h3>
             <div class="skill-icon skill-uiux">
               <svg class="skill-svg neon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -286,10 +287,10 @@
                 <path d="M16 12l2-2" />
               </svg>
             </div>
-            <p>Design intuitivo e focado em experiência.</p>
+            <p data-i18n="skill.uiux.desc">Design intuitivo e focado em experiência.</p>
           </div>
           <div class="card-back">
-            <p>
+            <p data-i18n="skill.uiux.back">
               UX é sobre como o usuário se sente ao usar um produto.
               Trabalha com pesquisas, testes, fluxos, arquitetura de informação e usabilidade para garantir
               que tudo seja simples, intuitivo e agradável.
@@ -306,7 +307,7 @@
 
   <!-- PROJECTS  -->
   <section id="projects" class="projects-carousel-section fade-in">
-    <h2>Conheça alguns dos meus Projetos</h2>
+    <h2 data-i18n="projects.title">Conheça alguns dos meus Projetos</h2>
 
     <div class="carousel-container">
 
@@ -322,25 +323,25 @@
           <!-- Project 1 -->
           <a href="" class="carousel-item" target="_blank">
             <img src="./assets/imgs/carousel/project-1.jpg" alt="Projeto 1">
-            <span class="carousel-caption">Projeto 1</span>
+            <span class="carousel-caption" data-i18n="projects.items.1.title">Projeto 1</span>
           </a>
 
           <!-- Project 2 -->
           <a href="" class="carousel-item" target="_blank">
             <img src="./assets/imgs/carousel/project-2.jpg" alt="Projeto 2">
-            <span class="carousel-caption">Projeto 2</span>
+            <span class="carousel-caption" data-i18n="projects.items.2.title">Projeto 2</span>
           </a>
 
           <!-- Project 3 -->
           <a href="" class="carousel-item" target="_blank">
             <img src="./assets/imgs/carousel/project-3.jpg" alt="Projeto 3">
-            <span class="carousel-caption">Projeto 3</span>
+            <span class="carousel-caption" data-i18n="projects.items.3.title">Projeto 3</span>
           </a>
 
           <!-- Project 4 -->
           <a href="" class="carousel-item" target="_blank">
             <img src="./assets/imgs/carousel/project-4.jpg" alt="Projeto 4">
-            <span class="carousel-caption">Projeto 4</span>
+            <span class="carousel-caption" data-i18n="projects.items.4.title">Projeto 4</span>
           </a>
 
         </div>
@@ -366,62 +367,67 @@
   <section id="services" class="section services fade-in">
     <div class="container">
 
-      <h2 class="section-title">Serviços que posso te oferecer</h2>
+      <h2 class="section-title" data-i18n="services.title">Serviços que posso te oferecer</h2>
 
       <div class="services-grid">
 
+        <!--Service 1-->
         <div class="service-card expandable">
-          <h3>Sites Institucionais</h3>
-          <p>Sites corporativos profissionais com design moderno e responsivo.</p>
+          <h3 data-i18n="services.items.1.title">Sites Institucionais</h3>
+          <p data-i18n="services.items.1.desc">Sites corporativos profissionais com design moderno e responsivo.</p>
           <ul>
-            <li>Design Responsivo</li>
-            <li>SEO Otimizado</li>
-            <li>Painel Admin</li>
-            <li>Integração com Redes Sociais</li>
+            <li data-i18n="services.items.1.li1">Design Responsivo</li>
+            <li data-i18n="services.items.1.li2">SEO Otimizado</li>
+            <li data-i18n="services.items.1.li3">Painel Admin</li>
+            <li data-i18n="services.items.1.li4">Integração com Redes Sociais</li>
           </ul>
         </div>
 
+        <!--Service 2-->
         <div class="service-card expandable">
-          <h3>Landing Pages</h3>
-          <p>Páginas focadas em conversão.</p>
+          <h3 data-i18n="service.items.2.title">Landing Pages</h3>
+          <p data-i18n="service.items.2.desc">Páginas focadas em conversão.</p>
           <ul>
-            <li>Alta Conversão</li>
-            <li>Carregamento Rápido</li>
-            <li>Formulários Avançados</li>
-            <li>Analytics Integrado</li>
+            <li data-i18n="services.items.2.li1">Alta Conversão</li>
+            <li data-i18n="services.items.2.li2">Carregamento Rápido</li>
+            <li data-i18n="services.items.2.li3">Formulários Avançados</li>
+            <li data-i18n="services.items.2.li4">Analytics Integrado</li>
           </ul>
         </div>
 
+        <!--Service 3-->
         <div class="service-card expandable">
-          <h3>E-commerce</h3>
-          <p>Lojas virtuais completas.</p>
+          <h3 data-i18n="service.items.3.title">E-commerce</h3>
+          <p data-i18n="service.items.3.desc">Lojas virtuais completas.</p>
           <ul>
-            <li>Gateway de Pagamento</li>
-            <li>Gestão de Estoque</li>
-            <li>Painel Vendedor</li>
-            <li>Sistema de Cupons</li>
+            <li data-i18n="services.items.3.li1">Gateway de Pagamento</li>
+            <li data-i18n="services.items.3.li2">Gestão de Estoque</li>
+            <li data-i18n="services.items.3.li3">Painel Vendedor</li>
+            <li data-i18n="services.items.3.li4">Sistema de Cupons</li>
           </ul>
         </div>
 
+        <!--Service 4-->
         <div class="service-card expandable">
-          <h3>Aplicativos Mobile</h3>
-          <p>Apps nativos e híbridos.</p>
+          <h3 data-i18n="service.items.4.title">Aplicativos Mobile</h3>
+          <p data-i18n="service.items.4.desc">Apps nativos e híbridos.</p>
           <ul>
-            <li>React Native</li>
-            <li>Push Notifications</li>
-            <li>Offline First</li>
-            <li>Design Nativo</li>
+            <li data-i18n="services.items.4.li1">React Native</li>
+            <li data-i18n="services.items.4.li2">Push Notifications</li>
+            <li data-i18n="services.items.4.li3">Offline First</li>
+            <li data-i18n="services.items.4.li4">Design Nativo</li>
           </ul>
         </div>
 
+        <!--Service 5-->
         <div class="service-card expandable">
-          <h3>Sistemas Web</h3>
-          <p>Sistemas personalizados.</p>
+          <h3 data-i18n="service.items.5.title">Sistemas Web</h3>
+          <p data-i18n="service.items.5.desc">Sistemas personalizados.</p>
           <ul>
-            <li>Sistema Sob Medida</li>
-            <li>Relatórios Avançados</li>
-            <li>Multi-usuário</li>
-            <li>API Rest</li>
+            <li data-i18n="services.items.5.li1">Sistema Sob Medida</li>
+            <li data-i18n="services.items.5.li2">Relatórios Avançados</li>
+            <li data-i18n="services.items.5.li3">Multi-usuário</li>
+            <li data-i18n="services.items.5.li4">API Rest</li>
           </ul>
         </div>
 
@@ -433,33 +439,33 @@
   <!-- BENEFITS -->
   <section class="benefits">
     <div class="container">
-      <h2 class="section-title">Por que ter um site?</h2>
+      <h2 class="section-title" data-i18n="benefits.title">Por que ter um site?</h2>
 
       <div class="benefits-grid fade-in-left">
 
         <div class="benefit-card">
-          <h4>Profissionalismo</h4>
-          <p>Um site aumenta a credibilidade da sua marca.</p>
+          <h4 data-i18n="benefits.items.1.title">Profissionalismo</h4>
+          <p data-i18n="benefits.items.1.desc">Um site aumenta a credibilidade da sua marca.</p>
         </div>
 
         <div class="benefit-card">
-          <h4>Disponibilidade 24/7</h4>
-          <p>Seu negócio continua visível mesmo quando você não está online.</p>
+          <h4 data-i18n="benefits.items.2.title">Disponibilidade 24/7</h4>
+          <p  data-i18n="benefits.items.2.desc">Seu negócio continua visível mesmo quando você não está online.</p>
         </div>
 
         <div class="benefit-card">
-          <h4>Maior Alcance</h4>
-          <p>Você pode alcançar clientes de qualquer lugar do mundo.</p>
+          <h4 data-i18n="benefits.items.3.title">Maior Alcance</h4>
+          <p  data-i18n="benefits.items.3.desc">Você pode alcançar clientes de qualquer lugar do mundo.</p>
         </div>
 
         <div class="benefit-card">
-          <h4>Vantagem Competitiva</h4>
-          <p>Presença online bem estruturada aumenta suas oportunidades.</p>
+          <h4 data-i18n="benefits.items.4.title">Vantagem Competitiva</h4>
+          <p  data-i18n="benefits.items.4.desc">Presença online bem estruturada aumenta suas oportunidades.</p>
         </div>
 
         <div class="benefit-card">
-          <h4>Automação e Facilidade</h4>
-          <p>Formulários, catálogos e integrações agilizam processos.</p>
+          <h4 data-i18n="benefits.items.5.title">Automação e Facilidade</h4>
+          <p  data-i18n="benefits.items.5.desc">Formulários, catálogos e integrações agilizam processos.</p>
         </div>
 
       </div>
@@ -470,18 +476,18 @@
   <section id="contact" class="section contact fade-in">
     <div class="container contact-container">
 
-      <h2 class="section-title">Deseja entrar em Contato?</h2>
+      <h2 class="section-title" data-i18n="contact.title">Deseja entrar em Contato?</h2>
 
-      <p class="contact-text">
+      <p class="contact-text" data-i18n="contact.subtitle">
         Tem um projeto em mente? Preencha o formulário e retornarei o mais rápido possível.
       </p>
 
       <form id="form-contato" class="contact-form">
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <input type="tel" placeholder="Telefone">
-        <textarea placeholder="Sua mensagem" rows="6" required></textarea>
-        <button class="btn sec-btn">Enviar Mensagem</button>
+        <input type="text" placeholder="Seu nome" data-i18n-placeholder="contact.form.name" required>
+        <input type="email" placeholder="Seu e-mail" data-i18n-placeholder="contact.form.email" required>
+        <input type="tel" placeholder="Telefone" data-i18n-placeholder="contact.form.phone" required>
+        <textarea placeholder="Sua mensagem" rows="6" data-i18n-placeholder="contact.form.message" required></textarea>
+        <button class="btn sec-btn" data-i18n="contact.form.button">Enviar Mensagem</button>
       </form>
 
     </div>
@@ -490,7 +496,7 @@
   <!--Whatsapp link-->
   <a target="_blank"
     href="https://wa.me/5541984300197?text=Olá, vim através de seu site e gostaria de mais informações sobre seus serviços"
-    class="whatsapp-float" aria-label="WhatsApp">
+    class="whatsapp-float" aria-label="WhatsApp" data-i18n-href="whatsapp.message">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
@@ -499,9 +505,9 @@
   <footer class="footer">
     <div class="container footer-container">
 
-      <p class="footer-text">© 2025 Gustavo Web Developer • Todos os direitos reservados</p>
+      <p class="footer-text" data-i18n="footer.rights">© 2025 Gustavo Web Developer • Todos os direitos reservados</p>
 
-      <p class="footer-follow">Me siga em todas as redes sociais!</p>
+      <p class="footer-follow" data-i18n="footer.follow">Me siga em todas as redes sociais!</p>
 
       <div class="footer-social-links">
         <a href="https://www.facebook.com/profile.php?id=61582797128127" target="_blank" aria-label="Facebook">

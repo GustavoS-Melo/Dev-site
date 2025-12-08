@@ -85,18 +85,6 @@ body {
     margin: 0 auto;
 }
 
-/* Logo */
-.logo img {
-    height: 44px;
-    display: block;
-    transition: transform var(--transition-fast);
-}
-
-.logo:focus,
-.logo:hover {
-    transform: translateY(-2px);
-}
-
 /* Nav */
 .nav {
     display: flex;
@@ -367,7 +355,7 @@ textarea:focus {
 }
 
 /* ABOUT */
-#sobre {
+#about {
     width: 100%;
     padding: 1%;
     background: #ffffff;
@@ -376,20 +364,20 @@ textarea:focus {
     font-family: var(--font-mont);
 }
 
-#sobre .sobre-container {
+#about .sobre-container {
     max-width: 1100px;
     margin: 0 auto;
     text-align: justify;
 }
 
-#sobre h2 {
+#about h2 {
     font-size: 2.8rem;
     font-weight: 400;
     margin-bottom: 10px;
     text-align: center;
 }
 
-#sobre .sobre-subtitle {
+#about .sobre-subtitle {
     font-size: 1.1rem;
     opacity: 0.75;
     max-width: 650px;
@@ -398,7 +386,7 @@ textarea:focus {
 
 /* Neon decorative line */
 
-#sobre .sobre-title::after {
+#about .sobre-title::after {
     content: "";
     display: block;
     width: 70px;
@@ -409,13 +397,13 @@ textarea:focus {
     box-shadow: 0 0 10px rgba(143, 87, 255, 0.5);
 }
 
-#sobre p {
+#about p {
     margin-bottom: 20px;
     font-size: 1.05rem;
     opacity: 0.9;
 }
 
-#sobre strong {
+#about strong {
     color: #8F57FF;
     font-weight: 700;
 }
