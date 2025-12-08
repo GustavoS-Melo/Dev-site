@@ -7,6 +7,7 @@
   <title>Web Developer</title>
   <!--STYLES-->
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="shortcut icon" href="./assets/imgs/favicon/favicon.svg" type="image/x-icon">
   <!--ICONS-->
   <script src="https://kit.fontawesome.com/af0ad01426.js" crossorigin="anonymous"></script>
 </head>
@@ -14,12 +15,24 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header">
+  <header id="header" class="header">
     <div class="container header-container">
 
       <!-- Logo -->
-      <a href="#" class="logo">
-        <img src="./assets/imgs/logo.png" alt="Logo Gustavo Dev">
+      <a href="#hero">
+        <svg width="170" height="60" viewBox="0 0 170 60" role="img"
+          aria-label="G W D logo">
+          <defs>
+            <linearGradient id="gwdGrad" x1="0" x2="1">
+              <stop offset="0" stop-color="#8F57FF" />
+              <stop offset="1" stop-color="#00D4FF" />
+            </linearGradient>
+          </defs>
+          <text x="10" y="42" font-family="Montserrat" font-weight="400" font-size="42">G</text>
+          <!-- Adjust the spacing between G and W -->
+          <text x="45" y="42" font-weight="800" font-size="42" fill="url(#gwdGrad)">W</text>
+          <text x="90" y="42" font-family="Montserrat" font-weight="400" font-size="42">D</text>
+        </svg>
       </a>
 
       <!-- Navigation -->
