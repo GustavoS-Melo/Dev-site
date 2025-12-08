@@ -496,13 +496,13 @@ textarea:focus {
     /* Gradient Border Surround */
     padding: 3px;
     border-radius: 22px;
-    background: radial-gradient(circle at 20% 30%, #8F57FF 0%, transparent 60%), radial-gradient(circle at 80% 70%, #00D8FF 0%, transparent 60%), linear-gradient(135deg, #121826, #0D1117);
+    background: radial-gradient(circle at 20% 30%, #8F57FF 0%, transparent 90%), radial-gradient(circle at 80% 70%, #00D8FF 0%, transparent 90%), linear-gradient(135deg, #121826, #0D1117);
 }
 
 /* Internal card (rotate) */
 
 .card-inner {
-    background: #0f0f0f;
+    background: #0f0f0f60;
     border-radius: 19px;
     height: 100%;
     transition: transform 0.7s ease;
@@ -556,7 +556,7 @@ textarea:focus {
     justify-content: center;
     padding: 35px;
     text-align: center;
-    background: #141414;
+    background: #0f0f0f60;
 }
 
 .card-back p {
