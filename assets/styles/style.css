@@ -265,6 +265,7 @@ body {
 }
 
 .hero button {
+    font-family: var(--font-mont);
     padding: 14px 34px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -273,9 +274,13 @@ body {
     cursor: pointer;
     letter-spacing: 0.5px;
     background: linear-gradient(135deg, #8F57FF, #00D8FF);
-    color: #ffffff;
     box-shadow: 0 0 15px rgba(143, 87, 255, 0.5), 0 0 30px rgba(0, 216, 255, 0.3);
     transition: transform 0.2s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.hero button a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .hero button:hover {
@@ -491,7 +496,7 @@ textarea:focus {
     /* Gradient Border Surround */
     padding: 3px;
     border-radius: 22px;
-    background: linear-gradient(135deg, #ff00ea, #6b00ff, #00eaff);
+    background: radial-gradient(circle at 20% 30%, #8F57FF 0%, transparent 60%), radial-gradient(circle at 80% 70%, #00D8FF 0%, transparent 60%), linear-gradient(135deg, #121826, #0D1117);
 }
 
 /* Internal card (rotate) */
@@ -972,6 +977,7 @@ textarea:focus {
     padding: 20px;
     background: radial-gradient(circle at 20% 30%, #8F57FF 0%, transparent 60%), radial-gradient(circle at 80% 70%, #00D8FF 0%, transparent 60%), linear-gradient(135deg, #121826, #0D1117);
     font-family: var(--font-mont);
+    padding-bottom: 40px;
 }
 
 .contact-container {
@@ -1302,4 +1308,18 @@ textarea:focus {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Reveal base (invisible before scroll) */
+.reveal {
+  opacity: 0 !important;
+  transform: translateY(40px) !important;
+  transition: opacity .8s ease, transform .8s ease;
+  will-change: opacity, transform;
+}
+
+/* When enter the viewport */
+.reveal.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
