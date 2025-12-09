@@ -167,3 +167,45 @@ function applyTranslations(data) {
     langImg.alt = data["lang.current"] || "Português";
   }
 }
+
+// Switch theme
+
+// Selectors
+const themeToggle = document.querySelector("#theme-toggle");
+const html = document.documentElement;
+
+// Check saved theme or apply 'light'
+let currentTheme = localStorage.getItem("site-theme") || "light";
+html.setAttribute("data-theme", currentTheme);
+
+// Applies correct icons at startup.
+updateThemeIcons(currentTheme);
+
+// Button click event
+themeToggle.addEventListener("click", () => {
+  currentTheme = currentTheme === "light" ? "dark" : "light";
+  html.setAttribute("data-theme", currentTheme);
+  localStorage.setItem("site-theme", currentTheme);
+
+  updateThemeIcons(currentTheme);
+});
+
+// Function to display the correct icon
+function updateThemeIcons(theme) {
+  const sun = document.querySelector(".sun-icon");
+  const moon = document.querySelector(".moon-icon");
+
+  if (theme === "light") {
+    // Light mode shows moon first (clicking activates dark mode)
+    moon.style.opacity = "1";
+    moon.style.transform = "scale(1)";
+    sun.style.opacity = "0";
+    sun.style.transform = "scale(0)";
+  } else {
+    // Dark mode to show the sun
+    sun.style.opacity = "1";
+    sun.style.transform = "scale(1)";
+    moon.style.opacity = "0";
+    moon.style.transform = "scale(0)";
+  }
+}
