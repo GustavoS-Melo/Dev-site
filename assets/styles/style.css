@@ -106,7 +106,7 @@ body {
     transition: transform 0.2s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
 
-.hero button a{
+.hero button a {
     text-decoration: none;
 }
 
@@ -1129,134 +1129,247 @@ textarea:focus {
 
 /* Reveal base (invisible before scroll) */
 .reveal {
-  opacity: 0 !important;
-  transform: translateY(40px) !important;
-  transition: opacity .8s ease, transform .8s ease;
-  will-change: opacity, transform;
+    opacity: 0 !important;
+    transform: translateY(40px) !important;
+    transition: opacity .8s ease, transform .8s ease;
+    will-change: opacity, transform;
 }
 
 /* When enter the viewport */
 .reveal.visible {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 
-/*                RESPONSIVENESS             */
+/* RESPONSIVENESS */
 
 /* 1024px */
 @media (max-width: 1024px) {
+    /*Hero Section */
 
-  /* Reduce side padding to avoid overflow */
-  .hero {
-    padding: 0 6%;
-  }
+    /* Reduce side padding to avoid overflow */
+    .hero {
+        padding: 0 6%;
+    }
 
-  /* Adjust heading size for medium screens */
-  .hero h1 {
-    font-size: 48px;
-  }
+    /* Adjust heading size for medium screens */
+    .hero h1 {
+        font-size: 48px;
+    }
 
-  /* Subtitle slightly smaller */
-  .hero p {
-    font-size: 22px;
-  }
+    /* Subtitle slightly smaller */
+    .hero p {
+        font-size: 22px;
+    }
 
-  /* Button slightly reduced */
-  .hero button {
-    font-size: 1rem;
-    padding: 12px 30px;
-  }
+    /* Button slightly reduced */
+    .hero button {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+
+    /* About Section */
+
+    /* Reduce subtitle max width for better readability */
+    #about .sobre-subtitle {
+        max-width: 550px;
+        /* smaller text block */
+    }
+
+    /* Slightly reduce card padding */
+    .sobre-card {
+        padding: 24px;
+    }
 }
 
 
 /* 768px */
 @media (max-width: 768px) {
 
-  /* More compact layout */
-  .hero {
-    padding: 0 5%;
-    text-align: center; /* Center text on tablet */
-  }
+    /*Hero Section */
 
-  /* Center content container */
-  .hero-content {
-    margin: 0 auto;
-    max-width: 550px;
-  }
+    /* More compact layout */
+    .hero {
+        padding: 0 5%;
+        text-align: center;
+        /* Center text on tablet */
+    }
 
-  /* Responsive text scaling */
-  .hero h1 {
-    font-size: 42px;
-  }
+    /* Center content container */
+    .hero-content {
+        margin: 0 auto;
+        max-width: 550px;
+    }
 
-  .hero p {
-    font-size: 20px;
-  }
+    /* Responsive text scaling */
+    .hero h1 {
+        font-size: 42px;
+    }
 
-  /* Button smaller on tablet */
-  .hero button {
-    padding: 12px 28px;
-    font-size: 1rem;
-  }
+    .hero p {
+        font-size: 20px;
+    }
+
+    /* Button smaller on tablet */
+    .hero button {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+
+    /*About Section*/
+
+    /* Center text for better layout on tablets */
+    #about .sobre-container {
+        text-align: center;
+        /* centralizes long text */
+    }
+
+    /* Reduce heading size */
+    #about h2 {
+        font-size: 2.4rem;
+        /* avoid oversized titles */
+    }
+
+    /* Reduce paragraph text */
+    #about .sobre-subtitle {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    /* Grid adapts to 2 columns comfortably */
+    .sobre-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+        gap: 20px;
+        /* smaller gaps */
+    }
+
+    .sobre-card {
+        padding: 22px;
+    }
+
+    .sobre-card h3 {
+        font-size: 1.2rem;
+    }
 }
 
 
 /* 480px */
 @media (max-width: 480px) {
 
-  /* Reduce padding to optimize screen usage */
-  .hero {
-    padding: 0 4%;
-  }
+    /* Hero Section */
 
-  /* Increase line-height for readability */
-  .hero h1 {
-    font-size: 34px;
-    line-height: 1.2;
-  }
+    /* Reduce padding to optimize screen usage */
+    .hero {
+        padding: 0 4%;
+    }
 
-  .hero p {
-    font-size: 18px;
-  }
+    /* Increase line-height for readability */
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
 
-  /* Button gets more compact */
-  .hero button {
-    padding: 10px 24px;
-    font-size: 0.95rem;
-  }
+    .hero p {
+        font-size: 18px;
+    }
 
-  /* Limit maximum width */
-  .hero-content {
-    max-width: 90%;
-  }
+    /* Button gets more compact */
+    .hero button {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+
+    /* Limit maximum width */
+    .hero-content {
+        max-width: 90%;
+    }
+
+    /* About Section*/
+
+    /* Increase padding around the section */
+    #about {
+        padding: 6% 4%;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about .sobre-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 35px;
+    }
+
+    /* Force 1 column layout */
+    .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .sobre-card {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .sobre-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .sobre-card .icon {
+        width: 36px;
+        height: 36px;
+    }
 }
 
 
 /* 360px */
 @media (max-width: 360px) {
 
-  /* Very compact layout for tiny screens */
-  .hero {
-    padding: 0 3%;
-  }
+    /* Hero Section */
 
-  .hero h1 {
-    font-size: 30px;
-  }
+    /* Very compact layout for tiny screens */
+    .hero {
+        padding: 0 3%;
+    }
 
-  .hero p {
-    font-size: 16px;
-  }
+    .hero h1 {
+        font-size: 30px;
+    }
 
-  /* Smallest button size */
-  .hero button {
-    padding: 9px 20px;
-    font-size: 0.9rem;
-  }
+    .hero p {
+        font-size: 16px;
+    }
 
-  /* Prevent title wrapping badly */
-  .hero-title span {
-    white-space: nowrap;
-  }
+    /* Smallest button size */
+    .hero button {
+        padding: 9px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Prevent title wrapping badly */
+    .hero-title span {
+        white-space: nowrap;
+    }
+
+    /* About Section */
+
+    #about h2 {
+        font-size: 1.8rem;
+        /* prevent overflow */
+    }
+
+    #about .sobre-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Smaller padding for tiny screens */
+    .sobre-card {
+        padding: 18px;
+    }
+
+    .sobre-card h3 {
+        font-size: 1.05rem;
+    }
 }
