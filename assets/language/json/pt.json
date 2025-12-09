@@ -1,9 +1,9 @@
 {
-  "header.nav.about": "Sobre",
-  "header.nav.skills": "habilidades",
-  "header.nav.projects": "Projetos",
-  "header.nav.services": "Serviços",
-  "header.nav.contact": "Contato",
+  "nav.about": "Sobre",
+  "nav.skills": "habilidades",
+  "nav.projects": "Projetos",
+  "nav.services": "Serviços",
+  "nav.contact": "Contato",
 
   "hero.title": "Olá, eu sou um Desenvolvedor Web",
   "hero.subtitle": "Crio interfaces modernas, rápidas e responsivas. Transformo seu negócio em experiências digitais completas.",

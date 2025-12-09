@@ -1,9 +1,9 @@
 {
-  "header.nav.about": "About",
-  "header.nav.skills": "Skills",
-  "header.nav.projects": "Projects",
-  "header.nav.services": "Services",
-  "header.nav.contact": "Contact",
+  "nav.about": "About",
+  "nav.skills": "Skills",
+  "nav.projects": "Projects",
+  "nav.services": "Services",
+  "nav.contact": "Contact",
 
   "hero.title": "Hello, I am a Web Developer",
   "hero.subtitle": "I create modern, fast and responsive interfaces. I transform your business into complete digital experiences.",
