@@ -217,3 +217,21 @@ function updateThemeIcons(theme) {
     moon.style.transform = "scale(0)";
   }
 }
+
+// Menu Mobile
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+// Open and close the mobile menu
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("open");
+  navMenu.classList.toggle("open");
+});
+
+// Close the menu when you click a link
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", () => {
+    menuToggle.classList.remove("open");
+    navMenu.classList.remove("open");
+  });
+});
