@@ -5,12 +5,12 @@
   "nav.services": "Services",
   "nav.contact": "Contact",
 
-  "hero.title": "Hello, I am a Web Developer",
+  "hero.title": "Hello, I am a <span>Web Developer</span>",
   "hero.subtitle": "I create modern, fast and responsive interfaces. I transform your business into complete digital experiences.",
   "hero.cta": "View Portfolio",
 
   "about.title": "About Me",
-  "about.p1": "Hello! My name is Gustavo, and I am a developer specialized in creating digital solutions that combine performance, modern design and a strong focus on user experience. I began my professional journey at 18… Since then, I have been helping companies, entrepreneurs and professionals turn ideas into real projects. My commitment goes beyond coding… If you’re looking for someone dedicated, approachable and passionate about what they do, it will be a pleasure to collaborate on your next project.",
+  "about.p1": "Hello! My name is <strong>Gustavo</strong>, and I am a developer specialized in creating digital solutions that combine <strong>performance, modern design and a strong focus on user experience.</strong> I began my professional journey at 18… Since then, I have been helping companies, entrepreneurs and professionals turn ideas into real projects. My commitment goes beyond coding… If you’re looking for someone dedicated, approachable and passionate about what they do, it will be a pleasure to collaborate on your next project.",
   "about.card1.title": "Experience",
   "about.card1.text": "I work in front-end development with a focus on performance and best practices.",
   "about.card2.title": "Modern Design",

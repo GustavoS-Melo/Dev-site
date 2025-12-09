@@ -154,7 +154,7 @@ function applyTranslations(data) {
 
     // Intern Text
     if (data[key]) {
-      el.textContent = data[key];
+      el.innerHTML = data[key];
     }
   });
 

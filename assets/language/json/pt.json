@@ -5,12 +5,12 @@
   "nav.services": "Serviços",
   "nav.contact": "Contato",
 
-  "hero.title": "Olá, eu sou um Desenvolvedor Web",
+  "hero.title": "Olá, eu sou um <span>Desenvolvedor Web</span>",
   "hero.subtitle": "Crio interfaces modernas, rápidas e responsivas. Transformo seu negócio em experiências digitais completas.",
   "hero.cta": "Ver Portfólio",
 
   "about.title": "Sobre Mim",
-  "about.p1": "Olá! Meu nome é Gustavo, sou desenvolvedor especializado na criação de soluções digitais que unem performance, design moderno e foco total na experiência do usuário. Iniciei minha trajetória profissional aos 18 anos... Desde então, venho ajudando empresas, empreendedores e profissionais a transformarem ideias em projetos reais. Meu compromisso vai além da programação... Se você busca alguém comprometido, acessível e apaixonado pelo que faz, será um prazer colaborar no seu próximo projeto.",
+  "about.p1": "Olá! Meu nome é <strong>Gustavo</strong>, sou desenvolvedor especializado na criação de soluções digitais que unem <strong>performance, design moderno e foco total na experiência do usuário.</strong> Iniciei minha trajetória profissional aos 18 anos... Desde então, venho ajudando empresas, empreendedores e profissionais a transformarem ideias em projetos reais. Meu compromisso vai além da programação... Se você busca alguém comprometido, acessível e apaixonado pelo que faz, será um prazer colaborar no seu próximo projeto.",
   "about.card1.title": "Experiência",
   "about.card1.text":"Atuo no desenvolvimento front-end com foco em performance e boas práticas.",
   "about.card2.title":"Design Moderno",
