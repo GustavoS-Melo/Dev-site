@@ -1249,6 +1249,26 @@ textarea:focus {
         font-size: 0.95rem;
         /* smaller text */
     }
+
+    /*Benefits Sction */
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .benefit-card {
+        padding: 18px 20px;
+    }
+
+    .benefit-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -1409,6 +1429,38 @@ textarea:focus {
     .service-card h3 {
         font-size: 1.3rem;
     }
+
+    /* Benefits Section */
+
+    .benefits .section-title {
+        font-size: 1.9rem;
+        margin-bottom: 40px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 10px 5px;
+    }
+
+    .benefit-card {
+        padding: 18px 18px;
+        border-left-width: 3px;
+    }
+
+    .benefit-card::before {
+        font-size: 0.95rem;
+        width: 30px;
+        height: 30px;
+    }
+
+    .benefit-card h4 {
+        font-size: 1.15rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -1567,6 +1619,37 @@ textarea:focus {
     .service-card ul li {
         font-size: 0.9rem;
     }
+
+    /* Benefits Services */
+
+    .benefits .section-title {
+        font-size: 1.7rem;
+    }
+
+    .benefits-grid {
+        gap: 22px;
+        padding: 5px;
+    }
+
+    .benefit-card {
+        padding: 15px 16px;
+        border-left-width: 3px;
+    }
+
+    .benefit-card::before {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+
+    .benefit-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.88rem;
+    }
+
 }
 
 
@@ -1697,5 +1780,35 @@ textarea:focus {
     /* Reduce list spacing */
     .service-card ul li {
         margin-bottom: 6px;
+    }
+
+    /* Benefits Section */
+
+    .benefits .section-title {
+        font-size: 1.5rem;
+    }
+
+    .benefits-grid {
+        gap: 18px;
+        padding: 0;
+    }
+
+    .benefit-card {
+        padding: 14px 14px;
+    }
+
+    .benefit-card::before {
+        width: 26px;
+        height: 26px;
+        font-size: 0.85rem;
+    }
+
+    .benefit-card h4 {
+        font-size: 1.05rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.85rem;
+        line-height: 1.35;
     }
 }
