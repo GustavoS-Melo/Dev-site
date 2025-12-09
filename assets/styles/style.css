@@ -68,6 +68,10 @@ body {
     font-family: var(--font-rale);
 }
 
+.logo-svg text {
+  color: var(--text);
+}
+
 .header-container {
     height: var(--header-height);
     display: flex;
