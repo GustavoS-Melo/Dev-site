@@ -1181,6 +1181,28 @@ textarea:focus {
     .sobre-card {
         padding: 24px;
     }
+
+    /* Skill Section */
+
+    .skills-grid {
+        /* Reduce to 2 columns */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+    .skills-section h2 {
+        font-size: 2.4rem;
+        /* Slightly smaller title */
+    }
+
+    .card-front h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-front p,
+    .card-back p {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -1252,6 +1274,32 @@ textarea:focus {
     .sobre-card h3 {
         font-size: 1.2rem;
     }
+
+    /* Skill Section */
+
+    .skills-grid {
+        /* Keep 2 columns but with tighter spacing */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        max-width: 90%;
+    }
+
+    .skill-card {
+        /* Reduce height ratio */
+        aspect-ratio: 1 / 1.3;
+    }
+
+    /* Reduce icon size */
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        padding: 12px;
+    }
+
+    .skills-section h2 {
+        font-size: 2.2rem;
+    }
+
 }
 
 
@@ -1321,6 +1369,39 @@ textarea:focus {
         width: 36px;
         height: 36px;
     }
+
+    /* Skill Section */
+
+    .skills-grid {
+        /* Switch to single column */
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        gap: 22px;
+    }
+
+    .skill-card {
+        aspect-ratio: 1 / 1.25;
+        padding: 2px;
+    }
+
+    .card-front h3 {
+        font-size: 1.25rem;
+    }
+
+    .card-front p {
+        font-size: 0.9rem;
+    }
+
+    .card-back p {
+        font-size: 0.9rem;
+        padding: 0 6px;
+    }
+
+    .skill-icon {
+        width: 58px;
+        height: 58px;
+        padding: 10px;
+    }
 }
 
 
@@ -1371,5 +1452,38 @@ textarea:focus {
 
     .sobre-card h3 {
         font-size: 1.05rem;
+    }
+
+    /* Skill Section */
+
+    .skills-section h2 {
+        font-size: 1.9rem;
+        /* Smaller title for tiny phones */
+    }
+
+    .skills-grid {
+        gap: 18px;
+        max-width: 300px;
+    }
+
+    .skill-card {
+        aspect-ratio: 1 / 1.35;
+        /* Slightly taller card */
+    }
+
+    .card-front h3 {
+        font-size: 1.15rem;
+    }
+
+    .card-front p,
+    .card-back p {
+        font-size: 0.85rem;
+        /* More compact text */
+    }
+
+    .skill-icon {
+        width: 52px;
+        height: 52px;
+        padding: 9px;
     }
 }
