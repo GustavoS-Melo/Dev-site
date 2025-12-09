@@ -1283,6 +1283,19 @@ textarea:focus {
     .contact-form {
         padding: 35px 30px;
     }
+
+    /* Footer */
+
+    /* Reduce spacing for medium screens */
+    .footer {
+        padding: 35px 0;
+    }
+
+    .footer-social-links a {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
 }
 
 
@@ -1507,6 +1520,24 @@ textarea:focus {
         padding: 14px 16px;
     }
 
+    /* Footer */
+
+    /* Slightly smaller text sizes */
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-follow {
+        font-size: 16px;
+    }
+
+    /* Social buttons adjust slightly */
+    .footer-social-links a {
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+        gap: 18px;
+    }
 }
 
 
@@ -1726,6 +1757,35 @@ textarea:focus {
         border-radius: 12px;
     }
 
+    /* Footer */
+
+    /* Reduce spacing and tighten layout */
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer-container {
+        gap: 14px;
+    }
+
+    .footer-text {
+        font-size: 13px;
+    }
+
+    .footer-follow {
+        font-size: 15px;
+    }
+
+    .footer-social-links {
+        gap: 16px;
+        /* Reduce distance between icons */
+    }
+
+    .footer-social-links a {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
 }
 
 
@@ -1911,5 +1971,34 @@ textarea:focus {
     .sec-btn {
         font-size: 0.95rem;
         padding: 13px;
+    }
+
+    /* Footer */
+
+    /* Compact layout for very small screens */
+    .footer {
+        padding: 26px 0;
+    }
+
+    .footer-container {
+        gap: 12px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .footer-follow {
+        font-size: 14px;
+    }
+
+    .footer-social-links {
+        gap: 14px;
+    }
+
+    .footer-social-links a {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
     }
 }
