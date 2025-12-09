@@ -467,7 +467,8 @@ textarea:focus {
     color: var(--accent2);
 }
 
-/*Projects*/
+/* Projects Section */
+
 /*Carousel*/
 
 .projects-carousel-section {
@@ -1203,6 +1204,26 @@ textarea:focus {
     .card-back p {
         font-size: 0.9rem;
     }
+
+    /* Projects Section */
+
+    .carousel-item img {
+        height: 360px;
+    }
+
+    .carousel-btn {
+        font-size: 1.4rem;
+        padding: 12px 14px;
+    }
+
+    .prev-btn {
+        left: -10px;
+    }
+
+    .next-btn {
+        right: -10px;
+    }
+
 }
 
 
@@ -1300,6 +1321,42 @@ textarea:focus {
         font-size: 2.2rem;
     }
 
+    /* Projects Section */
+
+    .projects-carousel-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        font-size: 1rem;
+        left: 14px;
+        bottom: 12px;
+        padding: 8px 16px;
+    }
+
+    .carousel-btn {
+        font-size: 1.3rem;
+        padding: 10px 12px;
+        backdrop-filter: blur(4px);
+    }
+
+    .prev-btn {
+        left: 0;
+    }
+
+    .next-btn {
+        right: 0;
+    }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 
@@ -1402,6 +1459,32 @@ textarea:focus {
         height: 58px;
         padding: 10px;
     }
+
+    /* Projects Section */
+
+    .projects-carousel-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .carousel-caption {
+        font-size: 0.85rem;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .carousel-btn {
+        padding: 7px 9px;
+        font-size: 1.1rem;
+    }
+
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
 }
 
 
@@ -1485,5 +1568,23 @@ textarea:focus {
         width: 52px;
         height: 52px;
         padding: 9px;
+    }
+
+    /*Projects Section*/
+
+    .projects-carousel-section h2 {
+        font-size: 1.55rem;
+    }
+
+    .carousel-item img {
+        height: 180px;
+    }
+
+    .carousel-caption {
+        font-size: 0.8rem;
+    }
+
+    .carousel-btn {
+        padding: 6px 8px;
     }
 }
