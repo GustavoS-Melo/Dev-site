@@ -161,17 +161,6 @@ body {
     outline-offset: 2px;
 }
 
-/* language switch */
-.lang-switch {
-    font-weight: 700;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    padding: 6px 10px;
-    color: var(--text);
-    min-width: 44px;
-    box-shadow: 0 6px 18px rgba(138, 92, 255, 0.04);
-}
-
 .lang-switch:hover {
     transform: translateY(-3px);
 }
@@ -254,9 +243,10 @@ body {
 
 .hero button {
     font-family: var(--font-mont);
+    color: #fff;
     padding: 14px 34px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 400;
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -267,7 +257,6 @@ body {
 }
 
 .hero button a{
-    color: #fff;
     text-decoration: none;
 }
 
@@ -313,12 +302,6 @@ body {
     position: relative;
     z-index: 2;
     max-width: 650px;
-}
-
-.section-title {
-    font-size: 1.15rem;
-    margin-bottom: 18px;
-    color: var(--text);
 }
 
 /* Tiny neon accent on hero title */

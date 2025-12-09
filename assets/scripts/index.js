@@ -114,8 +114,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Switch Language
 
+// Selectors
+
 const langBtn = document.querySelector("#lang-btn");
-const langText = document.querySelector(".lang-text");
+const langImg = document.querySelector("#lang-btn img");
 
 let currentLang = localStorage.getItem("site-lang") || "pt";
 
@@ -156,6 +158,12 @@ function applyTranslations(data) {
     }
   });
 
-  // Update the button text
-  langText.textContent = currentLang === "pt" ? "EN" : "PT";
+  // Update the button image and alt text
+  if (currentLang === "pt") {
+    langImg.src = "./assets/imgs/flag language/united-kingdom.jpg";
+    langImg.alt = data["lang.current"] || "English";  // Usa tradução do JSON ou fallback
+  } else {
+    langImg.src = "./assets/imgs/flag language/brasil.jpg";
+    langImg.alt = data["lang.current"] || "Português";
+  }
 }
