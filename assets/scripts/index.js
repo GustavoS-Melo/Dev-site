@@ -13,43 +13,43 @@ const totalSlides = items.length;
 
 // Update carousel position
 function updateCarousel() {
-    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-    indicators.forEach((dot, index) => {
-        dot.classList.toggle("active", index === currentIndex);
-    });
+  indicators.forEach((dot, index) => {
+    dot.classList.toggle("active", index === currentIndex);
+  });
 }
 
 // "next" button
 nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    updateCarousel();
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateCarousel();
 });
 
 // "prev" button
 prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    updateCarousel();
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  updateCarousel();
 });
 
 // Indicators
 indicators.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-        currentIndex = index;
-        updateCarousel();
-    });
+  dot.addEventListener("click", () => {
+    currentIndex = index;
+    updateCarousel();
+  });
 });
 
 // Auto-play
 setInterval(() => {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    updateCarousel();
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateCarousel();
 }, 5000);
 
 //Fade-in
 
 document.addEventListener("DOMContentLoaded", () => {
-  const debug = false; 
+  const debug = false;
   const nodeList = new Set();
   document.querySelectorAll('section').forEach(el => nodeList.add(el));
   document.querySelectorAll('.section').forEach(el => nodeList.add(el));
@@ -111,3 +111,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (debug) console.log(`Reveal: observing ${revealElements.length} elements`);
 });
+
+// Switch Language
+
+const langBtn = document.querySelector("#lang-btn");
+const langText = document.querySelector(".lang-text");
+
+let currentLang = localStorage.getItem("site-lang") || "pt";
+
+// Load the initial language
+loadLanguage(currentLang);
+
+// Switch language on click
+langBtn.addEventListener("click", () => {
+  currentLang = currentLang === "pt" ? "en" : "pt";
+  localStorage.setItem("site-lang", currentLang);
+  loadLanguage(currentLang);
+});
+
+// Function to load JSON file and apply translations.
+function loadLanguage(lang) {
+  fetch(`./assets/language/json/${lang}.json`)
+    .then(response => response.json())
+    .then(data => applyTranslations(data));
+}
+
+function applyTranslations(data) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+
+    // Support for placeholder text
+    if (el.placeholder !== undefined && data[key]) {
+      el.placeholder = data[key];
+    }
+
+    // Suport for aria-label
+    if (el.hasAttribute("aria-label") && data[key]) {
+      el.setAttribute("aria-label", data[key]);
+    }
+
+    // Intern Text
+    if (data[key]) {
+      el.textContent = data[key];
+    }
+  });
+
+  // Update the button text
+  langText.textContent = currentLang === "pt" ? "EN" : "PT";
+}
