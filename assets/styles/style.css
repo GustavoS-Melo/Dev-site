@@ -1224,6 +1224,31 @@ textarea:focus {
         right: -10px;
     }
 
+    /*Services Section*/
+
+    /* Slightly reduce title size */
+    .services .section-title {
+        font-size: 2.3rem;
+        /* smaller title */
+    }
+
+    /* Reduce padding inside cards */
+    .service-card {
+        padding: 22px 25px;
+        /* smaller spacing */
+    }
+
+    /* Adjust text sizes */
+    .service-card h3 {
+        font-size: 1.4rem;
+        /* slightly smaller */
+    }
+
+    .service-card p,
+    .service-card ul li {
+        font-size: 0.95rem;
+        /* smaller text */
+    }
 }
 
 
@@ -1357,6 +1382,33 @@ textarea:focus {
         width: 10px;
         height: 10px;
     }
+
+    /*Services Section*/
+
+    /* Title */
+    .services .section-title {
+        font-size: 2.1rem;
+        /* smaller title */
+        margin-bottom: 45px;
+    }
+
+    /* Grid: bigger columns to avoid too many in row */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 22px;
+        padding: 0 15px;
+        /* reduce side padding */
+    }
+
+    /* Cards spacing */
+    .service-card {
+        padding: 22px 20px;
+    }
+
+    /* Improve readability */
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
 }
 
 
@@ -1485,6 +1537,36 @@ textarea:focus {
         width: 8px;
         height: 8px;
     }
+
+    /*Services Section */
+
+    /* Title */
+    .services .section-title {
+        font-size: 1.9rem;
+        margin-bottom: 40px;
+    }
+
+    /* Force 1 column layout */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Cards */
+    .service-card {
+        padding: 20px 18px;
+        border-radius: 18px;
+    }
+
+    /* Text sizes */
+    .service-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .service-card p,
+    .service-card ul li {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -1586,5 +1668,34 @@ textarea:focus {
 
     .carousel-btn {
         padding: 6px 8px;
+    }
+
+    /* Services Section */
+
+    /* Title */
+    .services .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 35px;
+    }
+
+    /* Cards */
+    .service-card {
+        padding: 18px 15px; /* compact spacing */
+    }
+
+    /* Reduce titles further */
+    .service-card h3 {
+        font-size: 1.15rem;
+    }
+
+    /* Smaller descriptive text */
+    .service-card p,
+    .service-card ul li {
+        font-size: 0.85rem;
+    }
+
+    /* Reduce list spacing */
+    .service-card ul li {
+        margin-bottom: 6px;
     }
 }
