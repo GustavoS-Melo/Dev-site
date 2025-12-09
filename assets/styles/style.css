@@ -1221,7 +1221,7 @@ textarea:focus {
     }
 
     .next-btn {
-        right: -10px;
+        right: 0px;
     }
 
     /*Services Section*/
