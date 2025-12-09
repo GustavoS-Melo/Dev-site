@@ -1,0 +1,117 @@
+{
+  "header.nav.about": "About",
+  "header.nav.skills": "Skills",
+  "header.nav.projects": "Projects",
+  "header.nav.services": "Services",
+  "header.nav.contact": "Contact",
+
+  "hero.title": "Hello, I am a Web Developer",
+  "hero.subtitle": "I create modern, fast and responsive interfaces. I transform your business into complete digital experiences.",
+  "hero.cta": "View Portfolio",
+
+  "about.title": "About Me",
+  "about.p1": "Hello! My name is Gustavo, and I am a developer specialized in creating digital solutions that combine performance, modern design and a strong focus on user experience. I began my professional journey at 18… Since then, I have been helping companies, entrepreneurs and professionals turn ideas into real projects. My commitment goes beyond coding… If you’re looking for someone dedicated, approachable and passionate about what they do, it will be a pleasure to collaborate on your next project.",
+  "about.card1.title": "Experience",
+  "about.card1.text": "I work in front-end development with a focus on performance and best practices.",
+  "about.card2.title": "Modern Design",
+  "about.card2.text": "My visual identity is crafted to convey confidence, clarity and style.",
+  "about.card3.title": "I transform ideas into functional, responsive and high-impact interfaces.",
+
+  "skills.title": "Skills",
+  "skill.html.title": "HTML",
+  "skill.html.desc": "Semantic and SEO-optimized structure.",
+  "skill.html.back": "HTML (HyperText Markup Language) is the skeleton of the page, responsible for organizing and defining the elements that appear on the screen, serving as the base for CSS (style) and JavaScript (functionality).",
+
+  "skill.css.title": "CSS",
+  "skill.css.desc": "Modern, responsive and animated layouts.",
+  "skill.css.back": "CSS (Cascading Style Sheets) is used to define the visual style of a webpage. While HTML structures the content, CSS controls colors, sizes, fonts, spacing, layouts, animations and visual effects.",
+
+  "skill.js.title": "JavaScript",
+  "skill.js.desc": "Interactivity, logic and dynamic manipulation.",
+  "skill.js.back": "JavaScript is the programming language that brings interactivity and dynamism to web pages. It allows page elements to respond to user actions such as clicks, typing and mouse movement, and enables animations, form validation, API requests, updating content without reloading the page and much more.",
+
+  "skill.react.title": "React",
+  "skill.react.desc": "Component-based and high-performance interfaces.",
+  "skill.react.back": "React is a JavaScript library used to build user interfaces quickly, efficiently and in an organized manner. It works with components, which are reusable blocks of code representing interface elements such as buttons, cards, menus, forms etc.",
+
+  "skill.node.title": "Node.js",
+  "skill.node.desc": "Fast and secure APIs.",
+  "skill.node.back": "Node.js is a JavaScript runtime environment for server-side execution. While traditional JavaScript runs only in the browser, Node.js allows the use of JavaScript to build back-ends, APIs, servers and complete applications outside the browser.",
+
+  "skill.uiux.title": "UI / UX",
+  "skill.uiux.desc": "Intuitive and experience-focused design.",
+  "skill.uiux.back": "UX is about how the user feels while using a product. It involves research, testing, flows, information architecture and usability to ensure everything is simple, intuitive and enjoyable. UI is about visual appearance and interaction. It defines colors, typography, buttons, spacing, icons and all graphical elements the user sees and interacts with.",
+
+  "projects.title": "Check Out Some of My Projects",
+  "projects.items.1.title": "Correct Project 1",
+  "projects.items.2.title": "Correct Project 2",
+  "projects.items.3.title": "Correct Project 3",
+  "projects.items.4.title": "Correct Project 4",
+
+  "services.title": "Services I Can Offer You",
+
+  "services.items.1.title": "Institutional Websites",
+  "services.items.1.desc": "Professional corporate websites with modern and responsive design.",
+  "services.items.1.li1": "Responsive Design",
+  "services.items.1.li2": "SEO Optimized",
+  "services.items.1.li3": "Admin Panel",
+  "services.items.1.li4": "Social Media Integration",
+
+  "service.items.2.title": "Landing Pages",
+  "service.items.2.desc": "Pages focused on conversion.",
+  "services.items.2.li1": "High Conversion",
+  "services.items.2.li2": "Fast Loading",
+  "services.items.2.li3": "Advanced Forms",
+  "services.items.2.li4": "Integrated Analytics",
+
+  "service.items.3.title": "E-commerce",
+  "service.items.3.desc": "Complete online stores.",
+  "services.items.3.li1": "Payment Gateway",
+  "services.items.3.li2": "Stock Management",
+  "services.items.3.li3": "Seller Dashboard",
+  "services.items.3.li4": "Coupon System",
+
+  "service.items.4.title": "Mobile Apps",
+  "service.items.4.desc": "Native and hybrid apps.",
+  "services.items.4.li1": "React Native",
+  "services.items.4.li2": "Push Notifications",
+  "services.items.4.li3": "Offline First",
+  "services.items.4.li4": "Native Design",
+
+  "service.items.5.title": "Web Systems",
+  "service.items.5.desc": "Custom-built systems.",
+  "services.items.5.li1": "Tailored System",
+  "services.items.5.li2": "Advanced Reports",
+  "services.items.5.li3": "Multi-user",
+  "services.items.5.li4": "REST API",
+
+  "benefits.title": "Why Have a Website?",
+
+  "benefits.items.1.title": "Professionalism",
+  "benefits.items.1.desc": "A website increases your brand’s credibility.",
+
+  "benefits.items.2.title": "24/7 Availability",
+  "benefits.items.2.desc": "Your business stays visible even when you're offline.",
+
+  "benefits.items.3.title": "Greater Reach",
+  "benefits.items.3.desc": "You can reach customers from anywhere in the world.",
+
+  "benefits.items.4.title": "Competitive Advantage",
+  "benefits.items.4.desc": "A well-structured online presence increases your opportunities.",
+
+  "benefits.items.5.title": "Automation and Convenience",
+  "benefits.items.5.desc": "Forms, catalogs and integrations streamline processes.",
+
+  "contact.title": "Want to Get in Touch?",
+  "contact.subtitle": "Have a project in mind? Fill out the form and I will get back to you as soon as possible.",
+  "contact.form.name": "Your Name",
+  "contact.form.email": "Your E-mail",
+  "contact.form.phone": "Your Phone",
+  "contact.form.message": "Your Message",
+  "contact.form.button": "Send Message",
+
+  "whatsapp.message": "Hello, I came to you through your website and would like more information about your services.",
+
+  "footer.rights": "© 2025 Gustavo Web Developer • All rights reserved",
+  "footer.follow": "Follow me on all social media!"
+}
