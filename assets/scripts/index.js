@@ -152,6 +152,14 @@ function applyTranslations(data) {
       el.setAttribute("aria-label", data[key]);
     }
 
+    // Suport for data-i18n-placeholder
+    if (el.hasAttribute("data-i18n-placeholder")) {
+      const placeholderKey = el.getAttribute("data-i18n-placeholder");
+      if (data[placeholderKey]) {
+        el.placeholder = data[placeholderKey];
+      }
+    }
+
     // Intern Text
     if (data[key]) {
       el.innerHTML = data[key];

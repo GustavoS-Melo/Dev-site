@@ -97,10 +97,18 @@
 
   "contact.title":"Deseja entrar em Contato?",
   "contact.subtitle":"Tem um projeto em mente? Preencha o formulário e retornarei o mais rápido possível.",
-  "contact.form.name":"",
-  "contact.form.email":"",
-  "contact.form.phone":"",
-  "contact.form.message":"",
+  "contact.form.name": "Nome",
+  "contact.form.name.placeholder": "Seu nome",
+
+  "contact.form.email": "E-mail",
+  "contact.form.email.placeholder": "Seu e-mail",
+
+  "contact.form.phone": "Telefone",
+  "contact.form.phone.placeholder": "Seu telefone",
+
+  "contact.form.message": "",
+  "contact.form.message.placeholder": "Digite sua mensagem",
+
   "contact.form.button":"Enviar Mensagem",
 
   "whatsapp.message":"",
