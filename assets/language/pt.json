@@ -1,0 +1,38 @@
+{
+  "header.nav.home": "Início",
+  "header.nav.about": "Sobre",
+  "header.nav.services": "Serviços",
+  "header.nav.projects": "Projetos",
+  "header.nav.contact": "Contato",
+
+  "hero.title": "Construindo Experiências Digitais que Inspiram",
+  "hero.subtitle": "Desenvolvimento web moderno, responsivo e focado em performance para impulsionar sua presença online.",
+  "hero.cta": "Entrar em Contato",
+
+  "about.title": "Sobre Mim",
+  "about.text": "Sou um desenvolvedor web apaixonado por tecnologia, criando soluções digitais rápidas, responsivas e modernas.",
+  "about.skills.title": "Minhas habilidades",
+
+  "services.title": "Serviços",
+  "services.card1.title": "Desenvolvimento de Sites",
+  "services.card1.description": "Criação de sites profissionais, modernos e totalmente responsivos.",
+  "services.card2.title": "Landing Pages",
+  "services.card2.description": "Páginas otimizadas para conversão, com foco em resultados.",
+  "services.card3.title": "Portfólios Profissionais",
+  "services.card3.description": "Portfólios elegantes e personalizados para destacar sua imagem.",
+  "services.card4.title": "Manutenção",
+  "services.card4.description": "Atualização, correções e melhorias contínuas para seu site.",
+
+  "projects.title": "Projetos Recentes",
+  "projects.subtitle": "Alguns dos trabalhos que desenvolvi com foco em qualidade e performance.",
+
+  "contact.title": "Entre em Contato",
+  "contact.subtitle": "Preencha o formulário e retornarei o mais rápido possível.",
+  "contact.form.name": "Nome",
+  "contact.form.email": "E-mail",
+  "contact.form.message": "Mensagem",
+  "contact.form.submit": "Enviar Mensagem",
+
+  "footer.rights": "© 2025 Gustavo Web Developer • Todos os direitos reservados",
+  "footer.follow": "Me siga em todas as redes sociais!"
+}
