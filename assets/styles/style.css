@@ -20,6 +20,7 @@
     --font-rale: 'Raleway', sans-serif;
 }
 
+/*Light theme*/
 [data-theme="light"] {
     --bg: linear-gradient(180deg, #f7f8fb, #eef2fb);
     --panel: rgba(255, 255, 255, 0.7);
@@ -27,6 +28,16 @@
     --text: #09121a;
     --muted: #4b5965;
     --neon: 0 6px 28px rgba(138, 92, 255, 0.06);
+}
+
+/*Dark theme*/
+[data-theme="dark"] {
+    --bg: linear-gradient(180deg, #0b0f17, #121622);
+    --panel: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --text: #f5f7ff;
+    --muted: #b7c0ce;
+    --neon: 0 6px 28px rgba(138, 92, 255, 0.25);
 }
 
 /* Basic layout helpers */
@@ -189,6 +200,23 @@ body {
     color: var(--text);
 }
 
+/* Hide one of the icons according to the theme. */
+.sun-icon,
+.moon-icon {
+    position: absolute;
+    transition: 0.25s ease;
+}
+
+/* It begins by showing the moon (light theme). */
+.sun-icon { 
+    opacity: 0; 
+    transform: scale(1); 
+}
+.moon-icon { 
+    opacity: 1; 
+    transform: scale(0); 
+}
+
 /* menu toggle (hamburger) */
 .menu-toggle {
     display: none;
@@ -341,8 +369,6 @@ textarea:focus {
 #about {
     width: 100%;
     padding: 1%;
-    background: #ffffff;
-    color: #1e1e1e;
     line-height: 1.7;
     font-family: var(--font-mont);
 }
@@ -402,7 +428,6 @@ textarea:focus {
 .sobre-card {
     position: relative;
     z-index: 1;
-    background: #ffffffcc;
     padding: 30px;
     border-radius: 20px;
     border: var(--accent1) solid 1px;
@@ -805,7 +830,6 @@ textarea:focus {
 
 /* CARD */
 .service-card {
-    background: rgba(228, 228, 228, 0.644);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 22px;
     padding: 26px 28px;
@@ -937,7 +961,6 @@ textarea:focus {
 }
 
 .benefit-card p {
-    color: #000000;
     font-size: 0.95rem;
     line-height: 1.4;
 }
