@@ -116,6 +116,9 @@
 
   "contact.form.button":"Enviar Mensagem",
 
+  "contact.success.title": "Mensagem enviada com sucesso!",
+  "contact.success.desc": "Obrigado por entrar em contato comigo, irei retornar o mais breve possivel!",
+
   "whatsapp.message":"",
 
   "footer.rights":"© 2025 Gustavo Web Developer • Todos os direitos reservados",

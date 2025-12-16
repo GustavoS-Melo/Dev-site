@@ -12,6 +12,8 @@
   <link rel="shortcut icon" href="./assets/imgs/favicon/favicon.svg" type="image/x-icon">
   <!--ICONS fontawsome-->
   <script src="https://kit.fontawesome.com/af0ad01426.js" crossorigin="anonymous"></script>
+  <!--Form EmailJS-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -22,9 +24,7 @@
 
       <!-- Logo -->
       <a href="#hero" aria-label="Logo">
-        <svg width="170" height="60" viewBox="0 0 170 60" role="img"
-          aria-label="G W D logo"
-          class="logo-svg">
+        <svg width="170" height="60" viewBox="0 0 170 60" role="img" aria-label="G W D logo" class="logo-svg">
           <defs>
             <linearGradient id="gwdGrad" x1="0" x2="1">
               <stop offset="0" stop-color="#8F57FF" />
@@ -52,11 +52,7 @@
 
         <!-- Language switch -->
         <button class="lang-switch" id="lang-btn" aria-label="Change Language">
-          <img src="./assets/imgs/flag language/united-kingdom.jpg" 
-            width="25px" 
-            alt="English"  
-            data-i18n="lang.current"
-          >
+          <img src="./assets/imgs/flag language/united-kingdom.jpg" width="25px" alt="English" data-i18n="lang.current">
         </button>
 
         <!-- Dark / Light mode -->
@@ -87,7 +83,7 @@
         <p class="hero-subtitle" data-i18n="hero.subtitle">
           Crio interfaces modernas, rápidas e responsivas. Transformo seu negócio em experiências digitais completas.
         </p>
-        <a href="#projects"><button  class="btn primary-btn" data-i18n="hero.cta">Ver Portfólio</button></a>
+        <a href="#projects"><button class="btn primary-btn" data-i18n="hero.cta">Ver Portfólio</button></a>
       </div>
     </div>
   </section>
@@ -128,7 +124,8 @@
           </svg>
 
           <h3 data-i18n="about.card2.title">Design Moderno</h3>
-          <p data-i18n="about.card2.text">Minha identidade visual é pensada para transmitir confiança, clareza e estilo.</p>
+          <p data-i18n="about.card2.text">Minha identidade visual é pensada para transmitir confiança, clareza e estilo.
+          </p>
         </div>
 
         <div class="sobre-card fade-in-right">
@@ -470,22 +467,22 @@
 
         <div class="benefit-card">
           <h4 data-i18n="benefits.items.2.title">Disponibilidade 24/7</h4>
-          <p  data-i18n="benefits.items.2.desc">Seu negócio continua visível mesmo quando você não está online.</p>
+          <p data-i18n="benefits.items.2.desc">Seu negócio continua visível mesmo quando você não está online.</p>
         </div>
 
         <div class="benefit-card">
           <h4 data-i18n="benefits.items.3.title">Maior Alcance</h4>
-          <p  data-i18n="benefits.items.3.desc">Você pode alcançar clientes de qualquer lugar do mundo.</p>
+          <p data-i18n="benefits.items.3.desc">Você pode alcançar clientes de qualquer lugar do mundo.</p>
         </div>
 
         <div class="benefit-card">
           <h4 data-i18n="benefits.items.4.title">Vantagem Competitiva</h4>
-          <p  data-i18n="benefits.items.4.desc">Presença online bem estruturada aumenta suas oportunidades.</p>
+          <p data-i18n="benefits.items.4.desc">Presença online bem estruturada aumenta suas oportunidades.</p>
         </div>
 
         <div class="benefit-card">
           <h4 data-i18n="benefits.items.5.title">Automação e Facilidade</h4>
-          <p  data-i18n="benefits.items.5.desc">Formulários, catálogos e integrações agilizam processos.</p>
+          <p data-i18n="benefits.items.5.desc">Formulários, catálogos e integrações agilizam processos.</p>
         </div>
 
       </div>
@@ -503,14 +500,27 @@
       </p>
 
       <form method="post" id="form-contato" class="contact-form">
-        <input id="name" name="name" type="text" placeholder="Seu nome" data-i18n="contact.form.name" data-i18n-placeholder="contact.form.name.placeholder" required>
-        <input id="email" name="email" type="email" placeholder="Seu e-mail" data-i18n="contact.form.email" data-i18n-placeholder="contact.form.email.placeholder" required>
-        <input id="phone" name="phone" type="tel" placeholder="Telefone" data-i18n="contact.form.phone" data-i18n-placeholder="contact.form.phone.placeholder" required>
-        <input type="text" id="subject" name="subject" placeholder="Descreva seu interesse ou dúvida" data-i18n="contact.form.subject" data-i18n-placeholder="contact.form.subject.placeholder" required>
-        <textarea placeholder="Deixe uma mensagem" rows="6" data-i18n="contact.form.message" data-i18n-placeholder="contact.form.message.placeholder"></textarea>
+        <input id="name" name="name" type="text" placeholder="Seu nome" data-i18n="contact.form.name"
+          data-i18n-placeholder="contact.form.name.placeholder" required>
+        <input id="email" name="email" type="email" placeholder="Seu e-mail" data-i18n="contact.form.email"
+          data-i18n-placeholder="contact.form.email.placeholder" required>
+        <input id="phone" name="phone" type="tel" placeholder="Telefone" data-i18n="contact.form.phone"
+          data-i18n-placeholder="contact.form.phone.placeholder" required>
+        <input type="text" id="subject" name="subject" placeholder="Descreva seu interesse ou dúvida"
+          data-i18n="contact.form.subject" data-i18n-placeholder="contact.form.subject.placeholder" required>
+        <textarea id="message" placeholder="Deixe uma mensagem" rows="6" data-i18n="contact.form.message"
+          data-i18n-placeholder="contact.form.message.placeholder"></textarea>
         <button type="submit" class="btn sec-btn" data-i18n="contact.form.button">Enviar Mensagem</button>
       </form>
 
+    </div>
+
+    <!--Success Message (form)-->
+    <div id="success-screen" class="success-screen">
+      <div class="success-box">
+        <h2 data-i18n="contact.success.title">Mensagem enviada com sucesso!</h2>
+        <p data-i18n="contact.success.desc">Obrigado por entrar em contato comigo, irei retornar o mais breve possivel!</p>
+      </div>
     </div>
   </section>
 
