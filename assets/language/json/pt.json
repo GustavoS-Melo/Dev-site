@@ -5,7 +5,7 @@
   "nav.services": "Serviços",
   "nav.contact": "Contato",
 
-  "hero.title": "Olá, eu sou um <span>Desenvolvedor Web</span>",
+  "hero.title": "Olá, Seja Bem Vindo! </br>Eu sou um </br><span>Desenvolvedor Web</span>",
   "hero.subtitle": "Crio interfaces modernas, rápidas e responsivas. Transformo seu negócio em experiências digitais completas.",
   "hero.cta": "Ver Portfólio",
 
@@ -107,6 +107,9 @@
 
   "contact.form.phone": "Telefone",
   "contact.form.phone.placeholder": "Seu telefone",
+
+  "contact.form.subject": "Descreva seu interesse ou dúvida",
+  "contact.form.subject.placeholder": "Descreva seu interesse ou dúvida",
 
   "contact.form.message": "",
   "contact.form.message.placeholder": "Digite sua mensagem",

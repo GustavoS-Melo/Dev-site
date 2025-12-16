@@ -5,7 +5,7 @@
   "nav.services": "Services",
   "nav.contact": "Contact",
 
-  "hero.title": "Hello, I am a</br><span>Web Developer</span>",
+  "hero.title": "Hello, Welcome! I am a</br><span>Web Developer</span>",
   "hero.subtitle": "I create modern, fast and responsive interfaces. Transforming your business into complete digital experiences.",
   "hero.cta": "View Portfolio",
 
@@ -114,6 +114,9 @@
 
   "contact.form.phone": "Phone",
   "contact.form.phone.placeholder": "Your phone number",
+
+  "contact.form.subject": "Describe your interest or question",
+  "contact.form.subject.placeholder": "Describe your interest or question",
 
   "contact.form.message": "",
   "contact.form.message.placeholder": "Type your message",

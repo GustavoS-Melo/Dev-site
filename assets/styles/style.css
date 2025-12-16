@@ -282,7 +282,6 @@ textarea:focus {
 
 .skills-section {
     text-align: center;
-    color: #fff;
     font-family: var(--font-mont);
 }
 
@@ -290,7 +289,6 @@ textarea:focus {
     font-size: 2.8rem;
     font-weight: 400;
     margin-bottom: 50px;
-    color: #09121a;
 }
 
 /* Grid cards */

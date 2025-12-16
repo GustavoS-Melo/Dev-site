@@ -82,12 +82,12 @@
     <div class="container hero-container">
       <div class="hero-content">
         <h1 class="hero-title" data-i18n="hero.title">
-          Olá, eu sou um <span>Desenvolvedor Web</span>
+          Olá, seja bem vindo! Eu sou um <span>Desenvolvedor Web</span>
         </h1>
         <p class="hero-subtitle" data-i18n="hero.subtitle">
           Crio interfaces modernas, rápidas e responsivas. Transformo seu negócio em experiências digitais completas.
         </p>
-        <button class="btn primary-btn" data-i18n="hero.cta"><a href="#projects">Ver Portfólio</a></button>
+        <a href="#projects"><button  class="btn primary-btn" data-i18n="hero.cta">Ver Portfólio</button></a>
       </div>
     </div>
   </section>
@@ -502,12 +502,13 @@
         Tem um projeto em mente? Preencha o formulário e retornarei o mais rápido possível.
       </p>
 
-      <form id="form-contato" class="contact-form">
-        <input type="text" placeholder="Seu nome" data-i18n="contact.form.name" data-i18n-placeholder="contact.form.name.placeholder" required>
-        <input type="email" placeholder="Seu e-mail" data-i18n="contact.form.email" data-i18n-placeholder="contact.form.email.placeholder" required>
-        <input type="tel" placeholder="Telefone" data-i18n="contact.form.phone" data-i18n-placeholder="contact.form.phone.placeholder" required>
+      <form method="post" id="form-contato" class="contact-form">
+        <input id="name" name="name" type="text" placeholder="Seu nome" data-i18n="contact.form.name" data-i18n-placeholder="contact.form.name.placeholder" required>
+        <input id="email" name="email" type="email" placeholder="Seu e-mail" data-i18n="contact.form.email" data-i18n-placeholder="contact.form.email.placeholder" required>
+        <input id="phone" name="phone" type="tel" placeholder="Telefone" data-i18n="contact.form.phone" data-i18n-placeholder="contact.form.phone.placeholder" required>
+        <input type="text" id="subject" name="subject" placeholder="Descreva seu interesse ou dúvida" data-i18n="contact.form.subject" data-i18n-placeholder="contact.form.subject.placeholder" required>
         <textarea placeholder="Deixe uma mensagem" rows="6" data-i18n="contact.form.message" data-i18n-placeholder="contact.form.message.placeholder"></textarea>
-        <button class="btn sec-btn" data-i18n="contact.form.button">Enviar Mensagem</button>
+        <button type="submit" class="btn sec-btn" data-i18n="contact.form.button">Enviar Mensagem</button>
       </form>
 
     </div>
