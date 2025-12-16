@@ -258,7 +258,9 @@ document.querySelector('#form-contato').addEventListener('submit', function (eve
     emailjs.send(serviceId, templateId, formData).then(() => {
         successScreen.style.display = 'flex';
 
-        setTimeout(() => {}, 4000)
+        setTimeout(() => {
+            window.location.href = './index.html';
+        }, 4000)
     })
     .catch(error => {
         console.error(error);
