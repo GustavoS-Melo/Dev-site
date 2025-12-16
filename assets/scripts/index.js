@@ -235,3 +235,33 @@ document.querySelectorAll(".nav-link").forEach(link => {
     navMenu.classList.remove("open");
   });
 });
+
+// FORM EMAIL JS
+emailjs.init("W44hxtTVSp4ItfpCr");
+
+const successScreen = document.querySelector('#success-screen');
+
+document.querySelector('#form-contato').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = {
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        phone: document.querySelector('#phone').value,
+        subject: document.querySelector('#subject').value,
+        message: document.querySelector('#message').value
+    };
+
+    const serviceId = 'service_ts2bkfk';
+    const templateId = 'template_42pavol';
+
+    emailjs.send(serviceId, templateId, formData).then(() => {
+        successScreen.style.display = 'flex';
+
+        setTimeout(() => {}, 4000)
+    })
+    .catch(error => {
+        console.error(error);
+        alert('Erro ao enviar o formulário, por favor atualize a página e tente novamente. Caso o erro persista por favor nos procure através de nossos outros canais de comunicação');
+    });
+});
